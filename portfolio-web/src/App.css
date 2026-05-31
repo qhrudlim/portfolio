@@ -620,6 +620,59 @@ h2 {
   color: #aaa;
 }
 
+/* Print Styles for PDF Export */
+@media print {
+  .top-navbar, .back-link, .click-hint, .achievement-badge {
+    display: none !important;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .main-content-full {
+    margin-top: 0 !important;
+  }
+
+  .section {
+    padding: 2rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .card, .skill-category, .timeline-content, .contact-card {
+    box-shadow: none !important;
+    border: 1px solid #eee !important;
+    page-break-inside: avoid;
+  }
+
+  .project-hero {
+    padding: 2rem !important;
+    background-color: #f8f9fa !important;
+    color: black !important;
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .project-title { color: var(--primary-color) !important; font-size: 2.5rem !important; }
+  .project-subtitle { color: #666 !important; }
+  .project-info-grid .icon { display: none; }
+  
+  .project-main {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+
+  .about-container {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+
+  .profile-photo {
+    width: 200px !important;
+    box-shadow: none !important;
+  }
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .about-container {

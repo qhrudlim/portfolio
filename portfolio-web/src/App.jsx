@@ -1,40 +1,32 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
+import Contact from './components/Contact';
+import Timeline from './components/Timeline';
 import './App.css';
-
-function Home() {
-  return (
-    <>
-      <About />
-      <Skills />
-      <Projects />
-    </>
-  );
-}
 
 function App() {
   return (
     <Router>
       <div className="app-container">
         <Navbar />
-        <div className="layout-body">
-          <Sidebar />
-          <main className="main-content">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/project/:id" element={<ProjectDetail />} />
-            </Routes>
-            <footer className="footer">
-              <p>© 2026 Lim Bo-gyeong. All rights reserved.</p>
-            </footer>
-          </main>
-        </div>
+        <main className="main-content-full">
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/project/:id" element={<ProjectDetail />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <footer className="footer">
+          <p>© 2026 Lim Bo-gyeong. All rights reserved.</p>
+        </footer>
       </div>
     </Router>
   );

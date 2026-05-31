@@ -5,21 +5,21 @@ const Projects = () => {
   const projects = [
     {
       id: 'docq',
-      title: 'DocQ (공통 프로젝트)',
+      title: 'DocQ',
       description: 'PDF 기반 멀티플레이 3D 퀴즈 게임. 3D 환경에서의 보드게임 경험을 제공합니다.',
-      tech: ['React', 'Three.js'],
+      tech: ['React', 'Three.js', 'TypeScript'],
     },
     {
       id: 'biotwin',
-      title: 'BioTwin (특화 프로젝트)',
+      title: 'BioTwin',
       description: '특화 프로젝트로 진행된 BioTwin입니다.',
       tech: ['Vue.js'],
     },
     {
       id: 'jipchak',
-      title: 'JIPCHAK (자율 프로젝트)',
+      title: 'JIPCHAK',
       description: 'Main Page 및 GUIDE 구현. 하드웨어 제작 참여. 오픈소스 프로젝트입니다.',
-      tech: ['React', 'IoT'],
+      tech: ['React', 'IoT', 'Tailwind CSS', 'TypeScript'],
     }
   ];
 

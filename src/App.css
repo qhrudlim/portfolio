@@ -114,7 +114,7 @@ body {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 30%;
     height: 100vh;
     background-color: white;
     flex-direction: column;

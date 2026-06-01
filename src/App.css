@@ -92,6 +92,54 @@ body {
   padding-bottom: 5px;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 2rem;
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu a {
+    font-size: 1.5rem;
+  }
+
+  .nav-menu a.active {
+    border-bottom: none;
+    color: var(--accent-color);
+  }
+}
+
 /* Main Content Full Width */
 .main-content-full {
   margin-top: var(--navbar-height);

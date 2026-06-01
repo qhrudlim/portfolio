@@ -3,7 +3,7 @@ import profileImg from '../assets/profile.jpg';
 
 const About = () => {
   return (
-    <section id="about" className="section about-hero">
+    <section id="about" className="section about-hero animate-reveal">
       <div className="about-container">
         <div className="about-image-wrapper">
           <img src={profileImg} alt="임보경" className="profile-photo" />

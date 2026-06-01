@@ -89,7 +89,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="timeline-page section">
+    <div className="timeline-page section animate-reveal">
       <h2>Timeline & History</h2>
       <div className="timeline-container">
         {historyData.map((item, index) => (

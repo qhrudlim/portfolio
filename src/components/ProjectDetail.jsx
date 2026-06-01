@@ -80,7 +80,7 @@ const ProjectDetail = () => {
   if (!project) return <div className="section">프로젝트를 찾을 수 없습니다.</div>;
 
   return (
-    <div className="project-detail-page">
+    <div className="project-detail-page animate-reveal">
       <header className="project-hero">
         <div className="container">
           <Link to="/projects" className="back-link">← 목록으로 돌아가기</Link>

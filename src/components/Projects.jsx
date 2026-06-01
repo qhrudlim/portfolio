@@ -24,7 +24,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="section">
+    <section id="projects" className="section animate-reveal">
       <h2>Projects</h2>
       <div className="projects-list">
         {projects.map((project) => (

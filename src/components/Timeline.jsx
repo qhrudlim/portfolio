@@ -33,22 +33,28 @@ const Timeline = () => {
       category: 'Education'
     },
     {
-      date: '2025',
-      title: 'SW역량테스트 IM 등급 취득',
-      description: '삼성 SW 역량 테스트 IM 등급 획득',
-      category: 'Certification'
-    },
-    {
       date: '2025.08',
       title: '충남대학교 평화안보대학원 과학수사학과 석사 졸업',
       description: '과학수사학 전공 석사 학위 취득 (2022.03 ~ 2025.08)',
       category: 'Education'
     },
     {
+      date: '2025.08',
+      title: 'SW역량테스트 IM 등급 취득',
+      description: '삼성 SW 역량 테스트 IM 등급 획득',
+      category: 'Certification'
+    },
+    {
       date: '2025.06',
       title: 'SBS 아카데미 컴퓨터아트학원 웹디자인 과정 수료',
-      description: '대구지점, 웹디자인 및 퍼블리싱 기초 학습 (2025.03 ~ 2025.06)',
+      description: '웹디자인 및 퍼블리싱 기초 학습 (2025.03 ~ 2025.06)',
       category: 'Education'
+    },
+    {
+      date: '2023.08',
+      title: 'OPIc IM2 취득',
+      description: '영어 회화 능력 인증 (현재 만료)',
+      category: 'Certification'
     },
     {
       date: '2022.11 - 2023.10',

@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { 
   SiReact, SiVuedotjs, SiTypescript, SiTailwindcss, 
-  SiThreedotjs, SiBlender
+  SiThreedotjs, SiBlender, SiUnity
 } from 'react-icons/si';
 import { FaCalendarAlt, FaUserTag, FaRocket, FaLightbulb, FaTools, FaCheckCircle, FaMicrochip } from 'react-icons/fa';
 
@@ -10,14 +10,16 @@ const projectData = {
   docq: {
     title: 'DocQ',
     subtitle: 'PDF 기반 멀티플레이 3D 퀴즈 게임',
-    period: '2026.01.06 ~ 2026.02.13 (6주)',
+    period: '2026.01.06 ~ 2026.02.13 (6주, 6인 팀)',
     role: '프론트엔드 (3D 게임 화면 및 상태 기반 흐름 설계)',
     overview: 'PDF 문서를 기반으로 퀴즈를 생성하고, 이를 3D 보드게임 형태로 즐기며 이해도를 검증하는 서비스입니다.',
     tech: [
-      { name: 'React', icon: <SiReact color="#61DAFB" /> },
+      { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
       { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
       { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
-      { name: 'Blender', icon: <SiBlender color="#F5792A" /> }
+      { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
+      { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
+      { name: 'Unity', icon: <SiUnity color="#000000" /> }
     ],
     challenges: [
       {
@@ -26,7 +28,7 @@ const projectData = {
       },
       {
         issue: '웹 환경에서의 FBX 에셋 로딩 시간 문제',
-        solution: 'Blender를 활용해 FBX를 GLTF/GLB 포맷으로 변환하고 메시 비도출 옵션을 조정하여 파이프라인 단순화 및 로딩 최적화'
+        solution: 'Unity 및 Blender를 활용해 FBX를 GLTF/GLB 포맷으로 변환하고 메시 비도출 옵션을 조정하여 파이프라인 단순화 및 로딩 최적화'
       },
       {
         issue: '캐릭터 이동 애니메이션의 끊김 및 타이포그래피 문제',
@@ -39,37 +41,55 @@ const projectData = {
       '멀티플레이 환경에서의 단계 동기화 및 이벤트 중심 로직에서 상태 중심 설계로 구조 정리',
       '컴포넌트 책임 분리 및 UI 흐름/UX 디테일 개선'
     ],
-    achievements: '반 우승 수상'
-  },
-  biotwin: {
-    title: 'BioTwin',
-    subtitle: '특화 프로젝트 - 생체 데이터 시각화 플랫폼',
-    period: '2026.02.16 ~ 2026.04.03',
-    role: '프론트엔드 개발',
-    overview: '특화 프로젝트로 진행된 BioTwin입니다. 생체 데이터를 실시간으로 모니터링하고 시각화하는 솔루션을 제공합니다.',
-    tech: [
-      { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
-      { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> }
-    ],
-    challenges: [],
-    contributions: ['프론트엔드 UI/UX 개발', '데이터 시각화 차트 구현'],
-    achievements: null
+    achievements: 'SSAFY 공통 프로젝트 반 우승'
   },
   jipchak: {
     title: 'JIPCHAK',
-    subtitle: '자율 프로젝트 - IoT 기반 스마트 솔루션',
-    period: '2026.04.06 ~ 2026.06.02',
+    subtitle: '자율 프로젝트 - AI 기반 인형뽑기 확률 계산 오픈소스',
+    period: '2026.04.06 ~ 2026.06.02 (8주, 5인 팀)',
     role: '프론트엔드 및 하드웨어 제작 참여',
-    overview: 'Main Page 및 GUIDE 구현. 하드웨어 제작 참여. 사용자의 행동을 분석하고 집착할 정도의 편의성을 제공하는 오픈소스 프로젝트입니다.',
+    overview: '인형뽑기 성공 확률을 AI로 계산하여 보여주는 프로젝트로, 7인치 터치스크린에 최적화된 UI를 제공합니다.',
     tech: [
       { name: 'React', icon: <SiReact color="#61DAFB" /> },
       { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
       { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
       { name: 'IoT', icon: <FaMicrochip color="#00AEEF" /> }
     ],
-    challenges: [],
-    contributions: ['메인 페이지 UI/UX 구현', '가이드 시스템 설계', '하드웨어 제작 프로세스 참여'],
-    achievements: null
+    challenges: [
+      {
+        issue: '7인치 터치스크린 환경의 UI 제약',
+        solution: '터치 조작에 최적화된 큰 버튼과 직관적인 가이드 슬라이드 설계'
+      }
+    ],
+    contributions: [
+      '메인 페이지 및 가이드 모달 UI 구현',
+      '7인치 터치스크린 최적화 UI 설계',
+      '하드웨어 외관 제작 참여 및 통합 검증'
+    ],
+    achievements: '팀 프로젝트 리스크 관리 및 문서화 기여'
+  },
+  biotwin: {
+    title: 'BioTwin',
+    subtitle: '특화 프로젝트 - 생체 데이터 실시간 예측 시스템',
+    period: '2026.02.16 ~ 2026.04.03 (7주, 6인 팀)',
+    role: '프론트엔드 UI/UX 개발 및 데이터 시각화 차트 구현',
+    overview: '세포 배양 상태 및 약물 생산량을 실시간으로 예측하고 시각화하는 모니터링 시스템입니다.',
+    tech: [
+      { name: 'React 18', icon: <SiReact color="#61DAFB" /> },
+      { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
+      { name: 'Vite', icon: <FaRocket color="#646CFF" /> }
+    ],
+    challenges: [
+      {
+        issue: '방대한 생체 데이터의 실시간 시각화',
+        solution: 'Recharts를 활용하여 핵심 정보를 한눈에 파악할 수 있는 직관적 대시보드 설계'
+      }
+    ],
+    contributions: [
+      'Recharts 활용 생체 데이터 실시간 시각화 대시보드 구축',
+      '사용자 관점의 직관적 레이아웃 설계 및 UI 개발'
+    ],
+    achievements: '대규모 데이터 핸들링 역량 확보'
   }
 };
 

@@ -3,7 +3,7 @@ import {
   SiReact, SiVuedotjs, SiHtml5, SiTailwindcss, 
   SiDjango, SiJavascript, SiTypescript, SiPython, 
   SiMysql, SiGit, SiGithub, SiGitlab, SiJira, 
-  SiFigma, SiMattermost, SiPostman 
+  SiFigma, SiMattermost, SiPostman, SiUnity, SiVite, SiThreedotjs, SiBlender
 } from 'react-icons/si';
 import { FaJava, FaCss3Alt } from 'react-icons/fa';
 
@@ -11,30 +11,40 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Development Core',
-      description: '웹 프론트엔드의 핵심 기술 스택입니다.',
+      description: '웹 표준 및 접근성을 고려한 시맨틱 마크업과 정적 타입을 활용한 안정적인 설계를 지향합니다.',
       skills: [
         { name: 'JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
         { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
         { name: 'React', icon: <SiReact color="#61DAFB" /> },
-        { name: 'Vue', icon: <SiVuedotjs color="#4FC08D" /> },
+        { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
         { name: 'HTML5', icon: <SiHtml5 color="#E34F26" /> },
         { name: 'CSS3', icon: <FaCss3Alt color="#1572B6" /> },
         { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> }
       ]
     },
     {
-      title: 'Extended & Backend',
-      description: '더 넓은 시야를 갖추기 위한 언어와 백엔드 지식입니다.',
+      title: '3D & Graphics',
+      description: '웹 브라우저 상의 3D 객체 렌더링 및 인터랙션 구현, 모델 최적화 경험이 있습니다.',
       skills: [
-        { name: 'Python', icon: <SiPython color="#3776AB" /> },
-        { name: 'Java (Learning)', icon: <FaJava color="#007396" /> },
-        { name: 'Django', icon: <SiDjango color="#092E20" /> },
-        { name: 'MySQL', icon: <SiMysql color="#4479A1" /> }
+        { name: 'Three.js (TresJS)', icon: <SiThreedotjs color="#000000" /> },
+        { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
+        { name: 'Unity', icon: <SiUnity color="#000000" /> }
       ]
     },
     {
-      title: 'Collaboration & Productivity',
-      description: '효율적인 협업과 생산성을 위한 도구들입니다.',
+      title: 'Extended & Backend',
+      description: '알고리즘 문제 해결 능력과 백엔드 MVT 패턴에 대한 이해를 보유하고 있습니다.',
+      skills: [
+        { name: 'Python', icon: <SiPython color="#3776AB" /> },
+        { name: 'Django', icon: <SiDjango color="#092E20" /> },
+        { name: 'MySQL', icon: <SiMysql color="#4479A1" /> },
+        { name: 'Vite', icon: <SiVite color="#646CFF" /> },
+        { name: 'Java (Learning)', icon: <FaJava color="#007396" /> }
+      ]
+    },
+    {
+      title: 'Collaboration & Tools',
+      description: '팀 프로젝트 리스크 관리와 효율적인 협업을 위해 문서화와 소통 도구를 적극 활용합니다.',
       skills: [
         { name: 'Git / GitHub', icon: <SiGithub color="#181717" /> },
         { name: 'GitLab', icon: <SiGitlab color="#FC6D26" /> },

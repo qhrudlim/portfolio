@@ -7,19 +7,19 @@ const Projects = () => {
       id: 'docq',
       title: 'DocQ',
       description: 'PDF 기반 멀티플레이 3D 퀴즈 게임. 3D 환경에서의 보드게임 경험을 제공합니다.',
-      tech: ['React', 'Three.js', 'TypeScript'],
-    },
-    {
-      id: 'biotwin',
-      title: 'BioTwin',
-      description: '특화 프로젝트로 진행된 BioTwin입니다.',
-      tech: ['Vue.js'],
+      tech: ['Vue.js', 'Three.js', 'TypeScript', 'Tailwind CSS', 'Blender', 'Unity'],
     },
     {
       id: 'jipchak',
       title: 'JIPCHAK',
-      description: 'Main Page 및 GUIDE 구현. 하드웨어 제작 참여. 오픈소스 프로젝트입니다.',
+      description: '인형뽑기 확률 계산 AI 오픈소스 프로젝트. 메인 페이지 및 가이드 구현.',
       tech: ['React', 'IoT', 'Tailwind CSS', 'TypeScript'],
+    },
+    {
+      id: 'biotwin',
+      title: 'BioTwin',
+      description: '세포 배양 상태 실시간 모니터링 및 예측 시스템. 대규모 데이터 시각화가 핵심입니다.',
+      tech: ['React', 'TypeScript', 'Recharts'],
     }
   ];
 

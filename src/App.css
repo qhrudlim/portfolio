@@ -398,6 +398,40 @@ h2 {
 .category-badge.education { background: #e3f2fd; color: #1976d2; }
 .category-badge.experience { background: #f1f8e9; color: #388e3c; }
 .category-badge.certification { background: #fff3e0; color: #f57c00; }
+.category-badge.project { background: #f3e5f5; color: #7b1fa2; }
+
+/* Filter Buttons */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  border: 2px solid #eee;
+  background: white;
+  color: #666;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.filter-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.filter-btn.active {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
 
 .timeline-content h3 {
   margin-bottom: 0.5rem;

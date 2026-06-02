@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Timeline = () => {
+  const [filter, setFilter] = useState('All');
+
   const historyData = [
     {
       date: '2025.07 - 2026.06',
@@ -9,22 +11,28 @@ const Timeline = () => {
       category: 'Education'
     },
     {
-      date: '2026.04 - 2026.06',
-      title: '삼성 청년 SW 아카데미(SSAFY) 2학기 자율 프로젝트',
-      description: '자율 프로젝트(S14P31D108) 진행',
+      date: '2026.01 - 2026.06',
+      title: '삼성 청년 SW 아카데미(SSAFY) 2학기 교육 이수',
+      description: '웹 개발 심화 과정 및 실무형 팀 프로젝트 3회 수행',
       category: 'Education'
+    },
+    {
+      date: '2026.04 - 2026.06',
+      title: '삼성 청년 SW 아카데미(SSAFY) 자율 프로젝트 - JIPCHAK',
+      description: '인형뽑기 확률 계산 AI 오픈소스 프로젝트 (5인 팀)',
+      category: 'Project'
     },
     {
       date: '2026.02 - 2026.04',
-      title: '삼성 청년 SW 아카데미(SSAFY) 2학기 특화 프로젝트',
-      description: '특화 프로젝트(S14P21D201) 진행',
-      category: 'Education'
+      title: '삼성 청년 SW 아카데미(SSAFY) 특화 프로젝트 - BioTwin',
+      description: '세포 배양 실시간 모니터링 및 시각화 시스템 (6인 팀)',
+      category: 'Project'
     },
     {
       date: '2026.01 - 2026.02',
-      title: '삼성 청년 SW 아카데미(SSAFY) 2학기 공통 프로젝트',
-      description: '공통 프로젝트(S14P11D209) 진행 및 **반 우승**',
-      category: 'Education'
+      title: '삼성 청년 SW 아카데미(SSAFY) 공통 프로젝트 - DocQ',
+      description: 'PDF 기반 3D 퀴즈 게임 서비스 개발 및 **반 우승** (6인 팀)',
+      category: 'Project'
     },
     {
       date: '2025.07 - 2025.12',
@@ -94,12 +102,31 @@ const Timeline = () => {
     }
   ];
 
+  const categories = ['All', 'Education', 'Experience', 'Project', 'Certification'];
+
+  const filteredData = filter === 'All' 
+    ? historyData 
+    : historyData.filter(item => item.category === filter);
+
   return (
     <div className="timeline-page section animate-reveal">
       <h2>Timeline & History</h2>
+      
+      <div className="filter-container">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            className={`filter-btn ${filter === cat ? 'active' : ''}`}
+            onClick={() => setFilter(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
       <div className="timeline-container">
-        {historyData.map((item, index) => (
-          <div key={index} className="timeline-item">
+        {filteredData.map((item, index) => (
+          <div key={`${filter}-${index}`} className="timeline-item">
             <div className="timeline-dot"></div>
             <div className="timeline-date">{item.date}</div>
             <div className="timeline-content">

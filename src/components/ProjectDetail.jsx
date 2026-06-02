@@ -2,9 +2,9 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { 
   SiReact, SiVuedotjs, SiTypescript, SiTailwindcss, 
-  SiThreedotjs, SiBlender, SiUnity
+  SiThreedotjs, SiBlender, SiUnity, SiVite, SiPinia
 } from 'react-icons/si';
-import { FaCalendarAlt, FaUserTag, FaRocket, FaLightbulb, FaTools, FaCheckCircle, FaMicrochip } from 'react-icons/fa';
+import { FaCalendarAlt, FaUserTag, FaRocket, FaLightbulb, FaTools, FaCheckCircle, FaMicrochip, FaChartLine } from 'react-icons/fa';
 
 const projectData = {
   docq: {
@@ -15,8 +15,10 @@ const projectData = {
     overview: 'PDF 문서를 기반으로 퀴즈를 생성하고, 이를 3D 보드게임 형태로 즐기며 이해도를 검증하는 서비스입니다.',
     tech: [
       { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
-      { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
       { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
+      { name: 'Vite', icon: <SiVite color="#646CFF" /> },
+      { name: 'Pinia', icon: <SiPinia color="#FFD12F" /> },
+      { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
       { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
       { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
       { name: 'Unity', icon: <SiUnity color="#000000" /> }
@@ -77,7 +79,8 @@ const projectData = {
     tech: [
       { name: 'React 18', icon: <SiReact color="#61DAFB" /> },
       { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
-      { name: 'Vite', icon: <FaRocket color="#646CFF" /> }
+      { name: 'Vite', icon: <SiVite color="#646CFF" /> },
+      { name: 'Recharts', icon: <FaChartLine color="#22B5BF" /> }
     ],
     challenges: [
       {

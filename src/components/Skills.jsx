@@ -3,9 +3,10 @@ import {
   SiReact, SiVuedotjs, SiHtml5, SiTailwindcss, 
   SiDjango, SiJavascript, SiTypescript, SiPython, 
   SiMysql, SiGit, SiGithub, SiGitlab, SiJira, 
-  SiFigma, SiMattermost, SiPostman, SiUnity, SiVite, SiThreedotjs, SiBlender
+  SiFigma, SiMattermost, SiPostman, SiUnity, SiVite, SiThreedotjs, SiBlender,
+  SiPinia
 } from 'react-icons/si';
-import { FaJava, FaCss3Alt } from 'react-icons/fa';
+import { FaJava, FaCss3Alt, FaChartLine } from 'react-icons/fa';
 
 const Skills = () => {
   const skillCategories = [
@@ -17,18 +18,20 @@ const Skills = () => {
         { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
         { name: 'React', icon: <SiReact color="#61DAFB" /> },
         { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
+        { name: 'Pinia', icon: <SiPinia color="#FFD12F" /> },
         { name: 'HTML5', icon: <SiHtml5 color="#E34F26" /> },
         { name: 'CSS3', icon: <FaCss3Alt color="#1572B6" /> },
         { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> }
       ]
     },
     {
-      title: '3D & Graphics',
-      description: '웹 브라우저 상의 3D 객체 렌더링 및 인터랙션 구현, 모델 최적화 경험이 있습니다.',
+      title: '3D & Data Visualization',
+      description: '웹 브라우저 상의 3D 객체 렌더링 및 대규모 데이터의 직관적인 시각화 경험이 있습니다.',
       skills: [
         { name: 'Three.js (TresJS)', icon: <SiThreedotjs color="#000000" /> },
         { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
-        { name: 'Unity', icon: <SiUnity color="#000000" /> }
+        { name: 'Unity', icon: <SiUnity color="#000000" /> },
+        { name: 'Recharts', icon: <FaChartLine color="#22B5BF" /> }
       ]
     },
     {

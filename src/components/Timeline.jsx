@@ -33,9 +33,9 @@ const Timeline = () => {
       category: 'Education'
     },
     {
-      date: '2025.08',
+      date: '2022.03 - 2025.08',
       title: '충남대학교 평화안보대학원 과학수사학과 석사 졸업',
-      description: '과학수사학 전공 석사 학위 취득 (2022.03 ~ 2025.08)',
+      description: '과학수사학 전공 석사 학위 취득',
       category: 'Education'
     },
     {
@@ -45,9 +45,9 @@ const Timeline = () => {
       category: 'Certification'
     },
     {
-      date: '2025.06',
+      date: '2025.03 - 2025.06',
       title: 'SBS 아카데미 컴퓨터아트학원 웹디자인 과정 수료',
-      description: '웹디자인 및 퍼블리싱 기초 학습 (2025.03 ~ 2025.06)',
+      description: '웹디자인 및 퍼블리싱 기초 학습',
       category: 'Education'
     },
     {
@@ -75,9 +75,9 @@ const Timeline = () => {
       category: 'Experience'
     },
     {
-      date: '2022.02',
+      date: '2018.03 - 2022.02',
       title: '계명대학교 화학전공 학사 졸업',
-      description: '화학 전공 학사 학위 취득 (2018.03 ~ 2022.02)',
+      description: '화학 전공 학사 학위 취득',
       category: 'Education'
     },
     {

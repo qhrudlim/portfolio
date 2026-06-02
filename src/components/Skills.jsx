@@ -46,7 +46,8 @@ const Skills = () => {
       title: 'Collaboration & Tools',
       description: '팀 프로젝트 리스크 관리와 효율적인 협업을 위해 문서화와 소통 도구를 적극 활용합니다.',
       skills: [
-        { name: 'Git / GitHub', icon: <SiGithub color="#181717" /> },
+        { name: 'Git', icon: <SiGit color="#F05032" /> },
+        { name: 'GitHub', icon: <SiGithub color="#181717" /> },
         { name: 'GitLab', icon: <SiGitlab color="#FC6D26" /> },
         { name: 'Jira', icon: <SiJira color="#0052CC" /> },
         { name: 'Figma', icon: <SiFigma color="#F24E1E" /> },

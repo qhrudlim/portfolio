@@ -71,7 +71,6 @@ const Skills = () => {
               {category.skills.map((skill, sIndex) => (
                 <div key={sIndex} className="tag skill-tag-with-icon">
                   <span className="skill-icon">{skill.icon}</span>
-                  <span className="skill-name">{skill.name}</span>
                 </div>
               ))}
             </div>

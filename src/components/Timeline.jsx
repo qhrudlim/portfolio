@@ -110,8 +110,6 @@ const Timeline = () => {
 
   return (
     <div className="timeline-page section animate-reveal">
-      <h2>Timeline & History</h2>
-      
       <div className="filter-container">
         {categories.map((cat) => (
           <button

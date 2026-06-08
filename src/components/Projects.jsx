@@ -25,7 +25,6 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section animate-reveal">
-      <h2>Projects</h2>
       <div className="projects-list">
         {projects.map((project) => (
           <Link to={`/project/${project.id}`} key={project.id} className="project-card-link">

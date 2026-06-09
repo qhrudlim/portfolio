@@ -273,24 +273,25 @@ h2 {
 
 .skill-tags {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.6rem;
   margin-top: 1.5rem;
 }
 
 .tag {
   background-color: #edf2f7;
-  padding: 0.6rem 0.4rem;
+  padding: 0.6rem 0.8rem;
   border-radius: 10px;
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
+  justify-content: flex-start;
+  gap: 0.6rem;
   border: 1px solid transparent;
   width: 100%;
+  white-space: nowrap;
 }
 
 .tag:hover {

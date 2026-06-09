@@ -240,7 +240,7 @@ h2 {
 
 .skills-grid {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
@@ -285,7 +285,6 @@ h2 {
   gap: 0.4rem;
   border: 1px solid transparent;
   width: 100%;
-  overflow: hidden; /* Prevent text overflow from expanding the box */
 }
 
 .skill-icon {
@@ -298,12 +297,11 @@ h2 {
 .skill-name {
   font-size: 0.85rem;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 @media (max-width: 600px) {
   .skills-grid {
+    max-width: var(--max-width);
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1.5rem;

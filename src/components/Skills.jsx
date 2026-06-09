@@ -18,7 +18,7 @@ const Skills = () => {
         { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
         { name: 'HTML', icon: <SiHtml5 color="#E34F26" /> },
         { name: 'CSS', icon: <FaCss3Alt color="#1572B6" /> },
-        { name: 'Tailwind', icon: <SiTailwindcss color="#06B6D4" /> },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
         { name: 'Vite', icon: <SiVite color="#646CFF" /> },
         { name: 'Pinia', icon: <SiPinia color="#FFD12F" /> },
         { name: 'Recharts', icon: <FaChartLine color="#22B5BF" /> }
@@ -28,8 +28,8 @@ const Skills = () => {
       title: 'Language',
       description: '알고리즘 문제 해결 능력과 정적 타입을 활용한 안정적인 설계 역량을 보유하고 있습니다.',
       skills: [
-        { name: 'JS', icon: <SiJavascript color="#F7DF1E" /> },
-        { name: 'TS', icon: <SiTypescript color="#3178C6" /> },
+        { name: 'JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
+        { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
         { name: 'Python', icon: <SiPython color="#3776AB" /> },
         { name: 'Java', icon: <FaJava color="#007396" /> }
       ]
@@ -41,7 +41,7 @@ const Skills = () => {
         { name: 'Pandas', icon: <SiPandas color="#150458" /> },
         { name: 'Numpy', icon: <SiNumpy color="#013243" /> },
         { name: 'Jupyter', icon: <SiJupyter color="#F37626" /> },
-        { name: 'Colab', icon: <SiGooglecolab color="#F9AB00" /> },
+        { name: 'Google Colab', icon: <SiGooglecolab color="#F9AB00" /> },
         { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
         { name: 'Unity', icon: <SiUnity color="#000000" /> },
         { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> }

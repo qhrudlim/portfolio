@@ -4,55 +4,69 @@ import {
   SiDjango, SiJavascript, SiTypescript, SiPython, 
   SiMysql, SiGit, SiGithub, SiGitlab, SiJira, 
   SiFigma, SiMattermost, SiPostman, SiUnity, SiVite, SiThreedotjs, SiBlender,
-  SiPinia
+  SiPinia, SiDocker, SiLinux, SiPandas, SiNumpy, SiJupyter, SiGooglecolab
 } from 'react-icons/si';
-import { FaJava, FaCss3Alt, FaChartLine } from 'react-icons/fa';
+import { FaJava, FaCss3Alt, FaChartLine, FaMicrochip, FaAws } from 'react-icons/fa';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Development Core',
-      description: '웹 표준 및 접근성을 고려한 시맨틱 마크업과 정적 타입을 활용한 안정적인 설계를 지향합니다.',
+      title: 'Frontend',
+      description: '사용자 중심의 UI/UX와 컴포넌트 기반 설계, 모던 빌드 시스템을 활용하여 웹 서비스를 구현합니다.',
       skills: [
-        { name: 'JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
-        { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
         { name: 'React', icon: <SiReact color="#61DAFB" /> },
         { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
+        { name: 'HTML', icon: <SiHtml5 color="#E34F26" /> },
+        { name: 'CSS', icon: <FaCss3Alt color="#1572B6" /> },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
+        { name: 'Vite', icon: <SiVite color="#646CFF" /> },
         { name: 'Pinia', icon: <SiPinia color="#FFD12F" /> },
-        { name: 'HTML5', icon: <SiHtml5 color="#E34F26" /> },
-        { name: 'CSS3', icon: <FaCss3Alt color="#1572B6" /> },
-        { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> }
-      ]
-    },
-    {
-      title: '3D & Data Visualization',
-      description: '웹 브라우저 상의 3D 객체 렌더링 및 대규모 데이터의 직관적인 시각화 경험이 있습니다.',
-      skills: [
-        { name: 'Three.js (TresJS)', icon: <SiThreedotjs color="#000000" /> },
-        { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
-        { name: 'Unity', icon: <SiUnity color="#000000" /> },
         { name: 'Recharts', icon: <FaChartLine color="#22B5BF" /> }
       ]
     },
     {
-      title: 'Extended & Backend',
-      description: '알고리즘 문제 해결 능력과 백엔드 MVT 패턴에 대한 이해를 보유하고 있습니다.',
+      title: 'Language',
+      description: '알고리즘 문제 해결 능력과 정적 타입을 활용한 안정적인 설계 역량을 보유하고 있습니다.',
       skills: [
+        { name: 'JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
+        { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
         { name: 'Python', icon: <SiPython color="#3776AB" /> },
-        { name: 'Django', icon: <SiDjango color="#092E20" /> },
-        { name: 'MySQL', icon: <SiMysql color="#4479A1" /> },
-        { name: 'Vite', icon: <SiVite color="#646CFF" /> },
-        { name: 'Java (Learning)', icon: <FaJava color="#007396" /> }
+        { name: 'Java', icon: <FaJava color="#007396" /> }
       ]
     },
     {
-      title: 'Collaboration & Tools',
-      description: '팀 프로젝트 리스크 관리와 효율적인 협업을 위해 문서화와 소통 도구를 적극 활용합니다.',
+      title: 'AI & 3D',
+      description: '데이터 분석을 통한 인사이트 도출과 웹 기반 3D 환경 구축을 통해 차별화된 사용자 경험을 제공합니다.',
+      skills: [
+        { name: 'Pandas', icon: <SiPandas color="#150458" /> },
+        { name: 'Numpy', icon: <SiNumpy color="#013243" /> },
+        { name: 'Jupyter notebook', icon: <SiJupyter color="#F37626" /> },
+        { name: 'Google Colab', icon: <SiGooglecolab color="#F9AB00" /> },
+        { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
+        { name: 'Unity', icon: <SiUnity color="#000000" /> },
+        { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> }
+      ]
+    },
+    {
+      title: 'Backend & Infra',
+      description: '서버 사이드 로직 설계부터 DB 관계 설계, 클라우드 환경 배포 및 실물 기기 연동까지 시스템 전반을 구축합니다.',
+      skills: [
+        { name: 'Django', icon: <SiDjango color="#092E20" /> },
+        { name: 'MySQL', icon: <SiMysql color="#4479A1" /> },
+        { name: 'AWS EC2', icon: <FaAws color="#FF9900" /> },
+        { name: 'Hardware Prototyping', icon: <FaMicrochip color="#555" /> },
+        { name: 'Docker', icon: <SiDocker color="#2496ED" /> },
+        { name: 'Linux', icon: <SiLinux color="#FCC624" /> }
+      ]
+    },
+    {
+      title: 'Tools',
+      description: '효율적인 협업과 형상 관리, 프로젝트 일정 관리를 위해 다양한 도구를 적극 활용합니다.',
       skills: [
         { name: 'Git', icon: <SiGit color="#F05032" /> },
+        { name: 'Jira', icon: <SiJira color="#0052CC" /> },
         { name: 'GitHub', icon: <SiGithub color="#181717" /> },
         { name: 'GitLab', icon: <SiGitlab color="#FC6D26" /> },
-        { name: 'Jira', icon: <SiJira color="#0052CC" /> },
         { name: 'Figma', icon: <SiFigma color="#F24E1E" /> },
         { name: 'Postman', icon: <SiPostman color="#FF6C37" /> },
         { name: 'Mattermost', icon: <SiMattermost color="#0058CC" /> }
@@ -66,12 +80,12 @@ const Skills = () => {
         {skillCategories.map((category, index) => (
           <div key={index} className="skill-category">
             <h3>{category.title}</h3>
-            <p style={{ fontSize: '0.9rem', color: '#888', marginBottom: '1rem' }}>{category.description}</p>
+            <p style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem', lineHeight: '1.4' }}>{category.description}</p>
             <div className="skill-tags">
               {category.skills.map((skill, sIndex) => (
                 <div key={sIndex} className="tag skill-tag-with-icon">
                   <span className="skill-icon">{skill.icon}</span>
-                  <span className="skill-name">{skill.name}</span>
+                  <span className="skill-name" title={skill.name}>{skill.name}</span>
                 </div>
               ))}
             </div>

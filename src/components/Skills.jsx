@@ -80,7 +80,6 @@ const Skills = () => {
         {skillCategories.map((category, index) => (
           <div key={index} className="skill-category">
             <h3>{category.title}</h3>
-            <p style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem', lineHeight: '1.4' }}>{category.description}</p>
             <div className="skill-tags">
               {category.skills.map((skill, sIndex) => (
                 <div key={sIndex} className="tag skill-tag-with-icon">

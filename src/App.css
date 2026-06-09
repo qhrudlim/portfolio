@@ -240,12 +240,12 @@ h2 {
 
 .skills-grid {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .skill-category {
@@ -267,9 +267,9 @@ h2 {
 
 .skill-tags {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.5rem;
-  margin-top: 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  margin-top: 1rem;
 }
 
 .tag {

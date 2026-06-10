@@ -2,9 +2,11 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { 
   SiReact, SiVuedotjs, SiTypescript, SiTailwindcss, 
-  SiThreedotjs, SiBlender, SiUnity, SiVite, SiPinia
+  SiThreedotjs, SiBlender, SiUnity, SiVite, SiPinia,
+  SiSpringboot, SiSpringsecurity, SiMysql, SiOpenai, SiDocker,
+  SiRedis, SiFastapi, SiPython
 } from 'react-icons/si';
-import { FaCalendarAlt, FaUserTag, FaRocket, FaLightbulb, FaTools, FaCheckCircle, FaMicrochip, FaChartLine, FaHistory } from 'react-icons/fa';
+import { FaCalendarAlt, FaUserTag, FaRocket, FaLightbulb, FaTools, FaCheckCircle, FaMicrochip, FaChartLine, FaHistory, FaJava, FaAws } from 'react-icons/fa';
 
 const projectData = {
   docq: {
@@ -13,16 +15,51 @@ const projectData = {
     period: '2026.01.06 ~ 2026.02.13 (6주, 6인 팀)',
     role: '프론트엔드 (3D 게임 화면 및 상태 기반 흐름 설계)',
     overview: 'DocQ(독큐)는 PDF 문서를 활용해 생성된 퀴즈를 3D 보드게임 형태로 즐기는 멀티플레이 퀴즈 서비스입니다. 단순한 학습을 넘어 이미 습득한 지식의 이해도를 검증하고 기억을 환기하는 데 초점을 맞추었으며, 특히 웹 환경에서 3D 기반의 유기적인 게임 흐름을 구현하고 그 가능성을 기술적으로 검증하는 데 중점을 둔 프로젝트입니다.',
-    tech: [
-      { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
-      { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
-      { name: 'Vite', icon: <SiVite color="#646CFF" /> },
-      { name: 'Pinia', icon: <SiPinia color="#FFD12F" /> },
-      { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
-      { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
-      { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
-      { name: 'Unity', icon: <SiUnity color="#000000" /> }
-    ],
+    tech: {
+      grouped: [
+        {
+          category: 'Frontend (웹 클라이언트) - 담당 기술',
+          items: [
+            { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
+            { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
+            { name: 'Vite', icon: <SiVite color="#646CFF" /> },
+            { name: 'Pinia', icon: <SiPinia color="#FFD12F" /> },
+            { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
+            { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
+            { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
+            { name: 'Unity', icon: <SiUnity color="#000000" /> }
+          ]
+        },
+        { 
+          category: 'Backend (API & 게임 서버)', 
+          items: [
+            { name: 'Java 17', icon: <FaJava color="#007396" /> },
+            { name: 'Spring Boot 3.5', icon: <SiSpringboot color="#6DB33F" /> },
+            { name: 'Spring Security', icon: <SiSpringsecurity color="#6DB33F" /> },
+            { name: 'JPA' },
+            { name: 'WebSocket (STOMP)' },
+            { name: 'Redis', icon: <SiRedis color="#DC382D" /> },
+            { name: 'MySQL', icon: <SiMysql color="#4479A1" /> }
+          ] 
+        },
+        { 
+          category: 'AI (데이터 처리)', 
+          items: [
+            { name: 'Python', icon: <SiPython color="#3776AB" /> },
+            { name: 'FastAPI', icon: <SiFastapi color="#05998B" /> },
+            { name: 'MinerU' },
+            { name: 'OpenAI API', icon: <SiOpenai color="#10A37F" /> }
+          ] 
+        },
+        { 
+          category: 'Infra & DevOps', 
+          items: [
+            { name: 'AWS (EC2, RDS)', icon: <FaAws color="#FF9900" /> },
+            { name: 'Docker', icon: <SiDocker color="#2496ED" /> }
+          ] 
+        }
+      ]
+    },
     challenges: [
       {
         goal: 'PDF 기반 퀴즈를 단순 제공이 아닌 보드게임 형태의 상호작용 경험으로 구현',
@@ -176,14 +213,34 @@ const ProjectDetail = () => {
 
         <section className="detail-section card">
           <h3 className="section-title"><FaTools className="title-icon" /> 사용 기술</h3>
-          <div className="detail-skill-tags">
-            {project.tech.map((t, i) => (
-              <div key={i} className="detail-tag">
-                <span className="icon">{t.icon}</span>
-                <span>{t.name}</span>
-              </div>
-            ))}
-          </div>
+          {Array.isArray(project.tech) ? (
+            <div className="detail-skill-tags">
+              {project.tech.map((t, i) => (
+                <div key={i} className="detail-tag">
+                  <span className="icon">{t.icon}</span>
+                  <span>{t.name}</span>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="structured-tech-display">
+              {project.tech.grouped.map((group, i) => (
+                <div key={i} className="tech-subsection" style={{ marginBottom: i !== project.tech.grouped.length - 1 ? '1.5rem' : '0' }}>
+                  <h4 className="tech-sub-title" style={{ borderBottom: '2px solid #edf2f7', paddingBottom: '0.5rem', marginBottom: '1.2rem', color: 'var(--primary-color)' }}>
+                    {group.category}
+                  </h4>
+                  <div className="detail-skill-tags">
+                    {group.items.map((t, j) => (
+                      <div key={j} className="detail-tag">
+                        {t.icon && <span className="icon">{t.icon}</span>}
+                        <span>{t.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </section>
 
         {project.challenges.length > 0 && (

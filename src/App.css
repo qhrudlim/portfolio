@@ -763,12 +763,48 @@ h2 {
   align-items: center;
   gap: 0.8rem;
   font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.detail-tag:hover {
+  transform: translateY(-2px);
 }
 
 .detail-tag .icon {
   font-size: 1.4rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-width: 24px;
+}
+
+.text-icon {
+  font-weight: 900;
+  font-size: 0.75rem;
+  color: #59666C;
+  letter-spacing: -0.5px;
+}
+
+.skill-img-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.ws-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.websocket-official-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.mineru-icon {
+  width: 36px; /* Slightly larger for MinerU to show the smile detail */
+  height: 36px;
 }
 
 .challenges-grid {
@@ -844,6 +880,61 @@ h2 {
   line-height: 1.7;
   color: #555;
   margin: 0;
+}
+
+/* Structured Tech Stack */
+.structured-tech-display {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.tech-sub-title {
+  font-size: 1rem;
+  color: var(--light-text);
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.team-tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.team-tech-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-tech-label {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.05rem;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 0.3rem;
+  width: 100%;
+}
+
+.team-tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-badge-text {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #495057;
+  font-weight: 500;
 }
 
 .project-image-placeholder {

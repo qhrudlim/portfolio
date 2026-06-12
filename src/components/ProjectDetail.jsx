@@ -95,60 +95,63 @@ const ProjectDetail = () => {
           <section className="detail-section card">
             <h3 className="section-title"><FaLightbulb className="title-icon" /> 기술적 난점 및 해결</h3>
             <div className="challenges-container">
-              {project.challenges.map((c, i) => (
-                <div key={i} className={['DocQ', 'BioTwin', 'JIPCHAK', 'DocQ Refactoring (Vanilla JS Migration)', 'Open Source Contribution (AI Explainer)', 'Portfolio Web CI/CD Pipeline'].includes(project.title) ? "challenge-card-structured" : "challenge-item"}>
-                  {['DocQ', 'BioTwin', 'JIPCHAK', 'DocQ Refactoring (Vanilla JS Migration)', 'Open Source Contribution (AI Explainer)', 'Portfolio Web CI/CD Pipeline'].includes(project.title) ? (
-                    <>
-                      <div className="challenge-header">
-                        <span className="goal-label">Goal</span>
-                        <h4>{c.goal}</h4>
-                      </div>
-                      <div className="challenge-body">
-                        <div className="process-step">
-                          <div className="step-item">
-                            <span className="step-label">초기 시도</span>
-                            <p>{c.attempt}</p>
+              {project.challenges.map((c, i) => {
+                const isStructured = !!c.goal;
+                return (
+                  <div key={i} className={isStructured ? "challenge-card-structured" : "challenge-item"}>
+                    {isStructured ? (
+                      <>
+                        <div className="challenge-header">
+                          <span className="goal-label">Goal</span>
+                          <h4>{c.goal}</h4>
+                        </div>
+                        <div className="challenge-body">
+                          <div className="process-step">
+                            <div className="step-item">
+                              <span className="step-label">초기 시도</span>
+                              <p>{c.attempt}</p>
+                            </div>
+                            <div className="step-arrow">↓</div>
+                            <div className="step-item error">
+                              <span className="step-label">발생 문제</span>
+                              <p>{c.issue}</p>
+                            </div>
+                            <div className="step-item analysis">
+                              <span className="step-label">원인 분석</span>
+                              <p>{c.cause}</p>
+                            </div>
                           </div>
-                          <div className="step-arrow">↓</div>
-                          <div className="step-item error">
-                            <span className="step-label">발생 문제</span>
-                            <p>{c.issue}</p>
-                          </div>
-                          <div className="step-item analysis">
-                            <span className="step-label">원인 분석</span>
-                            <p>{c.cause}</p>
+                          <div className="solution-step">
+                            <div className="step-item success">
+                              <span className="step-label">해결 방법</span>
+                              <p>{c.solution}</p>
+                            </div>
+                            <div className="step-item reason">
+                              <span className="step-label">판단 근거</span>
+                              <p>{c.reason}</p>
+                            </div>
+                            <div className="step-item result">
+                              <span className="step-label">결과</span>
+                              <p><strong>{c.result}</strong></p>
+                            </div>
                           </div>
                         </div>
-                        <div className="solution-step">
-                          <div className="step-item success">
-                            <span className="step-label">해결 방법</span>
-                            <p>{c.solution}</p>
-                          </div>
-                          <div className="step-item reason">
-                            <span className="step-label">판단 근거</span>
-                            <p>{c.reason}</p>
-                          </div>
-                          <div className="step-item result">
-                            <span className="step-label">결과</span>
-                            <p><strong>{c.result}</strong></p>
-                          </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="issue">
+                          <span className="label">Problem</span>
+                          <p>{c.issue}</p>
                         </div>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="issue">
-                        <span className="label">Problem</span>
-                        <p>{c.issue}</p>
-                      </div>
-                      <div className="solution">
-                        <span className="label">Solution</span>
-                        <p>{c.solution}</p>
-                      </div>
-                    </>
-                  )}
-                </div>
-              ))}
+                        <div className="solution">
+                          <span className="label">Solution</span>
+                          <p>{c.solution}</p>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </section>
         )}

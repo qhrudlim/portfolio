@@ -5,7 +5,8 @@ import {
   SiThreedotjs, SiBlender, SiUnity, SiVite, SiPinia,
   SiSpringboot, SiSpringsecurity, SiMysql, SiOpenai, SiDocker,
   SiRedis, SiFastapi, SiPython, SiPostgresql, SiApachekafka, SiJenkins,
-  SiArduino, SiRaspberrypi, SiNginx
+  SiArduino, SiRaspberrypi, SiNginx,
+  SiJavascript, SiHtml5, SiCss, SiGit, SiGithub, SiGithubactions, SiGithubpages, SiGitlab
 } from 'react-icons/si';
 import { FaCalendarAlt, FaUserTag, FaRocket, FaLightbulb, FaTools, FaCheckCircle, FaMicrochip, FaChartLine, FaHistory, FaJava, FaAws } from 'react-icons/fa';
 
@@ -345,6 +346,182 @@ const projectData = {
         content: '일반 사용자 대상 서비스와 달리, 정보 밀도와 데이터 신뢰성을 최우선으로 하는 전문가용 도구의 UI/UX 설계 원칙을 실전에서 적용해 보았습니다.'
       }
     ]
+  },
+  'docq-refactor': {
+    title: 'DocQ Refactoring (Vanilla JS Migration)',
+    subtitle: '개인 프로젝트 - 프레임워크 한계 돌파 및 렌더링 본질 탐구',
+    period: '2026.02.09 ~ 2026.02.13 (1주, 1인)',
+    role: 'Front-End Developer',
+    overview: '기존에 Vue.js와 Tailwind CSS로 구축했던 DocQ 프로젝트를 React와 순수 Vanilla JS/CSS로 다운그레이드하며 다시 구현해 본 개인 실험 프로젝트입니다. 프레임워크가 제공하는 추상화의 장막을 걷어내고, DOM 조작과 상태 관리의 근본적인 원리를 직접 부딪히며 체득하는 데 목적을 두었습니다.',
+    tech: {
+      grouped: [
+        {
+          category: 'Frontend Core (프레임워크 및 언어)',
+          items: [
+            { name: 'React', icon: <SiReact color="#61DAFB" /> },
+            { name: 'Vanilla JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
+            { name: 'Vanilla CSS', icon: <SiCss color="#1572B6" /> },
+            { name: 'Vite', icon: <SiVite color="#646CFF" /> }
+          ]
+        },
+        {
+          category: 'State & 3D Rendering',
+          items: [
+            { name: 'Zustand' },
+            { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
+            { name: 'GSAP' },
+            { name: 'WebSocket (STOMP)' }
+          ]
+        }
+      ]
+    },
+    challenges: [
+      {
+        goal: '기술 전환을 통한 프레임워크 의존도 점검 및 컴포넌트 생명주기 깊이 이해',
+        attempt: '웹 디자인 학습 시절부터 익숙했던 순수 HTML/CSS/JS 환경으로 돌아가, Vue.js로 작성된 로직을 React Hooks와 Vanilla JS의 순수 DOM 이벤트 리스너로 각각 마이그레이션 시도',
+        issue: '프레임워크가 알아서 처리해주던 렌더링 최적화와 이벤트 해제(Cleanup)가 Vanilla JS 환경에서는 모두 수동으로 제어되어야 하여 메모리 누수 및 의도치 않은 재렌더링 발생',
+        cause: '선언적 UI(Declarative) 환경의 편리함에 익숙해져, 상태 변화에 따른 명령형(Imperative) DOM 제어의 디테일을 간과했던 것이 원인',
+        solution: 'Vanilla JS 환경에서 직접 상태(State) 객체를 관리하고, 상태가 변경될 때마다 필요한 DOM 요소만 선택적으로 업데이트하는 렌더링 함수를 모듈화하여 구조를 극도로 단순화',
+        reason: '단순히 화면을 똑같이 띄우는 것이 아니라, "프레임워크의 마법 없이도 유지보수 가능한 명확한 구조를 설계할 수 있는가?"를 스스로 점검하기 위함',
+        result: '프레임워크의 존재 이유와 그 내부에서 일어나는 가상 DOM(Virtual DOM)의 최적화 과정을 뼈저리게 이해하며 브라우저 렌더링의 본질 체득'
+      }
+    ],
+    contributions: [
+      'Vue.js 컴포넌트를 React 및 Vanilla JS 환경으로 1:1 마이그레이션',
+      'Tailwind CSS로 작성된 유틸리티 클래스들을 Vanilla CSS 기반의 모듈식 스타일링으로 재작성',
+      '의존성 없는 순수 JavaScript 상태 관리 로직 설계 및 테스트'
+    ],
+    achievements: '프레임워크 종속성 탈피 및 브라우저 렌더링 최적화 원리 완벽 체득',
+    retrospective: [
+      {
+        title: '익숙함으로 돌아가 찾은 본질',
+        content: '웹 디자인 시절 가장 편하게 다루었던 Vanilla 환경으로 돌아가 코드를 재작성하며, 프레임워크가 얼마나 많은 복잡성을 숨겨주고 있었는지 깨달았습니다. 동시에 순수 언어만으로 상태 흐름을 제어해보며 코드를 단순하게 유지하는 역량을 길렀습니다.'
+      },
+      {
+        title: '질문하기 전 먼저 탐구하는 습관',
+        content: '마이그레이션 중 막히는 부분이 생겨도 곧바로 정답을 찾기보다, "이 프레임워크는 이걸 내부적으로 어떻게 처리하고 있을까?"를 먼저 고민하고 실험(탐구)하며 문제 해결력을 길렀습니다.'
+      }
+    ]
+  },
+  'opensource': {
+    title: 'First Open Source Contribution (AI Explainer)',
+    subtitle: '오픈소스 레포지토리 첫 기여 - 실무형 협업 프로세스 및 Git Flow 체득',
+    period: '2026.03.19 ~ 2026.03.25 (1주, 1인)',
+    role: 'Open Source Contributor',
+    overview: 'AI Explainer 오픈소스 프로젝트를 분석하던 중 발견한 반응형 UI 스크롤 버그를 스스로 원인을 파악하고 해결하여, 생애 첫 PR(Pull Request) 병합을 이끌어낸 오픈소스 기여 경험입니다. 문제를 찾고 수정하는 것을 넘어, Fork부터 Rebase, Force Push에 이르는 실무 Git Flow를 완벽하게 경험했습니다.',
+    tech: {
+      grouped: [
+        {
+          category: 'Frontend Core',
+          items: [
+            { name: 'Vanilla JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
+            { name: 'HTML5', icon: <SiHtml5 color="#E34F26" /> },
+            { name: 'Vanilla CSS', icon: <SiCss color="#1572B6" /> }
+          ]
+        },
+        {
+          category: 'Version Control & Deployment',
+          items: [
+            { name: 'Git', icon: <SiGit color="#F05032" /> },
+            { name: 'GitHub Flow', icon: <SiGithub color="#181717" /> },
+            { name: 'GitHub Actions', icon: <SiGithubactions color="#2088FF" /> },
+            { name: 'GitHub Pages', icon: <SiGithubpages color="#222222" /> }
+          ]
+        }
+      ]
+    },
+    challenges: [
+      {
+        goal: '오픈소스 프로젝트의 이슈(스크롤 오프셋 버그) 분석 및 정확한 원인 규명',
+        attempt: '사이트 네비게이션(navbar) 클릭 시 대상 섹션의 상단이 sticky header에 가려지는 현상(Offset 버그)을 발견하고, HTML -> CSS -> JS 순서로 구조 분석 진행',
+        issue: '기존 코드는 브라우저 기본 스크롤 동작에 의존하거나 header의 높이를 고정값으로 산정하여, 반응형 환경(모바일 등)에서 스크롤 기준점이 지속적으로 어긋나는 문제 확인',
+        cause: '반응형 레이아웃에서 header의 offsetHeight가 동적으로 변한다는 점이 스크롤 로직에 반영되지 않음',
+        solution: 'scrollIntoView() 대신 window.scrollTo()를 활용한 커스텀 스크롤 로직으로 변경하고, DOM에서 header의 동적 높이(offsetHeight)를 실시간으로 계산하여 빼주는 방식으로 로직 전면 수정',
+        reason: '단순히 CSS의 scroll-padding-top으로 우회하는 꼼수 대신, JS 레벨에서 뷰포트 변화에 완벽히 대응하는 근본적인 구조 개선을 제시하기 위함',
+        result: '모든 디바이스 환경에서 섹션 상단이 header 아래에 정확하게 맞춰지는 안정적인 반응형 스크롤 구현 성공'
+      },
+      {
+        goal: '완벽한 형태의 첫 오픈소스 PR(Pull Request) 제출 및 실무 Git 병합 과정 돌파',
+        attempt: '로컬에서 코드를 수정하고 원본 레포에 직접 Push를 시도했으나 403 에러 발생. 이후 Fork를 생성하여 첫 PR을 올림',
+        issue: 'PR 제출 후 메인 브랜치에 새로운 커밋들이 지속적으로 올라와 PR 브랜치의 코드가 뒤쳐지며 충돌(Conflict) 위험 발생',
+        cause: '타인의 레포지토리에 기여하는 오픈소스 생태계의 Fork & Pull Request 메커니즘과, 원본 레포 동기화(Rebase)에 대한 경험 부재',
+        solution: '원본(Upstream) 레포지토리의 최신 변경사항을 Pull 받아 내 브랜치에 Rebase하고, git push --force 명령어를 통해 PR 내역을 최신 상태로 깔끔하게 업데이트',
+        reason: '단순히 코드를 고치는 것을 넘어, 레포지토리 관리자(Maintainer)가 즉시 Merge할 수 있도록 커밋 히스토리와 브랜치 상태를 최상으로 관리하는 것이 오픈소스 에티켓이기 때문',
+        result: '메인테이너의 "LGTM" 코멘트와 함께 성공적인 첫 PR Merge를 이끌어내며 실무 Git Flow 완벽 체득'
+      }
+    ],
+    contributions: [
+      '웹사이트 구조(HTML/CSS/JS) 역공학 분석 및 Sticky Header 스크롤 버그 수정',
+      '명확한 문제 정의를 위한 다수의 Issue 발행 및 본문 지속적 정제',
+      '403 에러 극복 후 Fork 브랜치 생성 및 규격에 맞는 완벽한 PR 작성',
+      'Upstream 변경 사항 동기화를 위한 Git Rebase 및 Force Push 성공적 수행'
+    ],
+    achievements: '첫 오픈소스 기여 완료 및 고급 Git 활용 역량(Rebase, PR 관리) 습득',
+    retrospective: [
+      {
+        title: '끝까지 물고 늘어지는 집요함',
+        content: '단순히 "이거 고장 났어요"라고 묻는 대신, 혼자서 며칠간 코드를 뜯어보고 다양한 시도를 반복하며 결국 정답을 찾아낸 과정은 저의 가장 큰 무기인 집요함을 증명해 준 시간이었습니다.'
+      },
+      {
+        title: '진짜 개발자의 소통 방식',
+        content: 'Issue와 PR의 본문을 무수히 다듬으며, "내 코드가 왜 필요한가"를 상대방에게 논리적으로 설득하는 글쓰기의 중요성을 배웠습니다.'
+      }
+    ]
+  },
+  'portfolio-cicd': {
+    title: 'Portfolio Web CI/CD Pipeline',
+    subtitle: '개인 프로젝트 - React 포트폴리오 구축 및 자동 배포 인프라 설계',
+    period: '2026.05.27 ~ 2026.06.01 (1주, 1인)',
+    role: 'Front-End & DevOps',
+    overview: '현재 보고 계신 이 포트폴리오 웹사이트의 개발 및 무중단 배포(CI/CD) 환경 구축 프로젝트입니다. 개발 생산성을 높이기 위해 단순히 로컬에서 빌드하는 것에 그치지 않고, GitHub Actions를 활용해 코드를 푸시하면 자동으로 빌드와 배포가 이루어지는 파이프라인을 바닥부터 직접 설계했습니다.',
+    tech: {
+      grouped: [
+        {
+          category: 'Frontend',
+          items: [
+            { name: 'React', icon: <SiReact color="#61DAFB" /> },
+            { name: 'Vite', icon: <SiVite color="#646CFF" /> },
+            { name: 'CSS', icon: <SiCss color="#1572B6" /> }
+          ]
+        },
+        {
+          category: 'DevOps & Infra',
+          items: [
+            { name: 'GitHub Actions', icon: <SiGithubactions color="#2088FF" /> },
+            { name: 'GitHub Pages', icon: <SiGithubpages color="#222222" /> },
+            { name: 'GitLab (Origin Issue Debugging)', icon: <SiGitlab color="#FC6D26" /> }
+          ]
+        }
+      ]
+    },
+    challenges: [
+      {
+        goal: '안정적이고 독립적인 포트폴리오 웹사이트 배포 환경 구축',
+        attempt: 'gh-pages 브랜치를 활용하여 GitHub Pages에 배포를 시도했으나, 로컬 Git 저장소가 GitLab Origin으로 묶여 있어 엉뚱한 곳으로 배포되는 현상 발생',
+        issue: '클론(Clone)부터 다시 진행하여 배포했으나, 레포지토리의 Private 설정 에러 및 Base Path 하위 폴더 라우팅 경로 지정 오류가 연이어 발생하여 페이지가 하얗게 뜨는 문제 직면',
+        cause: '기존의 단순 플러그인(gh-pages) 의존적인 배포 방식이 가진 한계와, 정적 자원 라우팅(Vite Base Path)에 대한 인프라적 이해 부족',
+        solution: '기존 브랜치 방식의 배포를 전면 폐기하고, GitHub Actions의 YAML 워크플로우를 직접 작성하여 Push 감지 -> 종속성 설치 -> Vite Build -> Pages 배포로 이어지는 완벽한 CI/CD 자동화 파이프라인으로 구조를 재설계',
+        reason: '단순히 플러그인에 의존해 일회성으로 구현하기보다, "배포 프로세스 전체의 통제권"을 제가 직접 가져와 유지보수 가능하고 명확한 인프라 구조를 세우고자 함',
+        result: '현재는 main 브랜치에 코드가 push 되는 즉시 모든 배포 과정이 전자동으로 이루어지는 안정적인 무중단 CI/CD 인프라 구축 성공'
+      }
+    ],
+    contributions: [
+      'React 및 Vite 기반의 반응형 포트폴리오 웹 애플리케이션 개발',
+      'Origin 충돌 및 Private 레포지토리 권한 에러 트러블슈팅',
+      'Vite 환경의 라우팅 구조 분석 및 Base Path 오류 완전 해결',
+      'GitHub Actions(deploy.yml) 기반의 빌드 및 자동 배포 파이프라인(CI/CD) 구축'
+    ],
+    achievements: '정적 웹사이트 호스팅 원리 이해 및 CI/CD 파이프라인 직접 구축 역량 확보',
+    retrospective: [
+      {
+        title: '문제의 원인을 파고드는 구조화 역량',
+        content: '경로 에러가 발생했을 때 웹사이트 배포에 꼭 필요한 파일들만 남기고 과감히 전부 삭제하며 원인을 찾아나가는 "통제 변인 설정"을 진행했습니다. 복잡한 에러 앞에서도 문제를 단순하게 구조화하여 해결하는 저만의 강점을 다시 한번 확인했습니다.'
+      },
+      {
+        title: '구현 그 너머의 인프라적 고민',
+        content: '웹사이트 코드를 작성하는 것을 넘어, 로컬 환경의 코드를 실제 운영(Production) 환경으로 내보내는 파이프라인을 견고하게 유지하는 것이 얼마나 중요한지 깨달았습니다. 구조의 단순성과 유지보수성을 프론트엔드뿐만 아니라 배포 파이프라인에도 적용한 값진 경험이었습니다.'
+      }
+    ]
   }
 };
 
@@ -420,8 +597,8 @@ const ProjectDetail = () => {
             <h3 className="section-title"><FaLightbulb className="title-icon" /> 기술적 난점 및 해결</h3>
             <div className="challenges-container">
               {project.challenges.map((c, i) => (
-                <div key={i} className={['DocQ', 'BioTwin', 'JIPCHAK'].includes(project.title) ? "challenge-card-structured" : "challenge-item"}>
-                  {['DocQ', 'BioTwin', 'JIPCHAK'].includes(project.title) ? (
+                <div key={i} className={['DocQ', 'BioTwin', 'JIPCHAK', 'DocQ Refactoring (Vanilla JS Migration)', 'Open Source Contribution (AI Explainer)', 'Portfolio Web CI/CD Pipeline'].includes(project.title) ? "challenge-card-structured" : "challenge-item"}>
+                  {['DocQ', 'BioTwin', 'JIPCHAK', 'DocQ Refactoring (Vanilla JS Migration)', 'Open Source Contribution (AI Explainer)', 'Portfolio Web CI/CD Pipeline'].includes(project.title) ? (
                     <>
                       <div className="challenge-header">
                         <span className="goal-label">Goal</span>

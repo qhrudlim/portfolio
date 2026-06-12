@@ -18,20 +18,20 @@ const Timeline = () => {
     },
     {
       date: '2026.04 - 2026.06',
-      title: '삼성 청년 SW 아카데미(SSAFY) 자율 프로젝트 - JIPCHAK',
-      description: '3D 깊이 카메라를 통해 집게가 인형을 집을 확률을 계산하여 실시간으로 보여주는 오픈소스 프로젝트 (5인 팀)',
+      title: '삼성 청년 SW 아카데미(SSAFY) 자율 프로젝트 - JIPCHAK (5인 팀)',
+      description: '3D 깊이 카메라를 통해 집게가 인형을 집을 확률을 계산하여 실시간으로 보여주는 오픈소스 프로젝트',
       category: 'Project'
     },
     {
       date: '2026.02 - 2026.04',
-      title: '삼성 청년 SW 아카데미(SSAFY) 특화 프로젝트 - BioTwin',
-      description: '세포 배양에 영향을 주는 파라미터를 조절해 항체 수율을 예측하고 실시간으로 모니터링하는 프로젝트 (6인 팀)',
+      title: '삼성 청년 SW 아카데미(SSAFY) 특화 프로젝트 - BioTwin (6인 팀)',
+      description: '디지털 트윈 기술을 적용하여 세포 배양 공정을 실시간 모니터링하고, AI 모델의 예측값을 통합 시각화하는 플랫폼',
       category: 'Project'
     },
     {
       date: '2026.01 - 2026.02',
-      title: '삼성 청년 SW 아카데미(SSAFY) 공통 프로젝트 - DocQ',
-      description: 'PDF 문서를 기반으로 생성된 퀴즈를 보드게임 형태로 즐기는 멀티플레이 3D 퀴즈 게임 프로젝트 (6인 팀)',
+      title: '삼성 청년 SW 아카데미(SSAFY) 공통 프로젝트 - DocQ (6인 팀)',
+      description: 'PDF 문서를 기반으로 생성된 퀴즈를 보드게임 형태로 즐기는 멀티플레이 3D 퀴즈 게임',
       category: 'Project'
     },
     {

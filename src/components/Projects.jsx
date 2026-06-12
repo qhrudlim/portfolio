@@ -6,8 +6,8 @@ const Projects = () => {
     {
       id: 'jipchak',
       title: 'JIPCHAK',
-      description: '인형뽑기 확률 계산 AI 오픈소스 프로젝트. 메인 페이지 및 가이드 구현.',
-      tech: ['React', 'TypeScript', 'Tailwind CSS', 'IoT'],
+      description: 'AI 기반 인형뽑기 확률 분석 및 키오스크 인터페이스 플랫폼. 메인 페이지 및 가이드 구현과 하드웨어 외관 엔지니어링을 담당했습니다.',
+      tech: ['React', 'TypeScript', 'Vite', 'Framer Motion', 'Zustand', 'Tailwind CSS', 'Recharts'],
     },
     {
       id: 'biotwin',

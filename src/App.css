@@ -288,6 +288,10 @@ h2 {
   gap: 0.4rem;
   border: 1px solid transparent;
   width: 100%;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: left;
 }
 
 .skill-icon {
@@ -302,12 +306,182 @@ h2 {
   white-space: nowrap;
 }
 
+.skill-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(17, 24, 39, 0.52);
+  backdrop-filter: blur(4px);
+}
+
+.skill-modal {
+  position: relative;
+  width: min(560px, 100%);
+  max-height: min(78vh, 680px);
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5eaf0;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.24);
+  padding: 2rem;
+}
+
+.skill-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5eaf0;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.skill-modal-close:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.skill-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-modal-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background: #f6f8fb;
+  border: 1px solid #e8edf3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 2rem;
+}
+
+.skill-modal-category {
+  color: var(--accent-color);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.skill-modal h3 {
+  color: var(--primary-color);
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+
+.skill-level-area {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 0;
+  margin-bottom: 1.2rem;
+  border-top: 1px solid #edf1f5;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.skill-level-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, 26px);
+  gap: 0.45rem;
+}
+
+.skill-level-box {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid #cfd8e3;
+  background: #f4f7fa;
+}
+
+.skill-level-box.filled {
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.22);
+}
+
+.skill-level-text {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.skill-description-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.skill-description-list li {
+  position: relative;
+  padding-left: 1rem;
+  color: #4b5563;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.skill-description-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
 @media (max-width: 600px) {
   .skills-grid {
     max-width: var(--max-width);
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1.5rem;
+  }
+
+  .skill-modal-backdrop {
+    align-items: flex-end;
+    padding: 1rem;
+  }
+
+  .skill-modal {
+    padding: 1.5rem;
+    max-height: 84vh;
+  }
+
+  .skill-modal-header {
+    align-items: flex-start;
+  }
+
+  .skill-level-area {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .skill-level-boxes {
+    grid-template-columns: repeat(5, 23px);
+  }
+
+  .skill-level-box {
+    width: 23px;
+    height: 23px;
   }
 }
 

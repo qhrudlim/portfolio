@@ -37,8 +37,8 @@ export const docqDetail = {
       { 
         category: 'Backend (API & 게임 서버)', 
         items: [
-          { name: 'Java 17', icon: <FaJava color="#007396" /> },
-          { name: 'Spring Boot 3.5', icon: <SiSpringboot color="#6DB33F" /> },
+          { name: 'Java', icon: <FaJava color="#007396" /> },
+          { name: 'Spring Boot', icon: <SiSpringboot color="#6DB33F" /> },
           { name: 'Spring Security', icon: <SiSpringsecurity color="#6DB33F" /> },
           { name: 'JPA' },
           { name: 'WebSocket (STOMP)' },

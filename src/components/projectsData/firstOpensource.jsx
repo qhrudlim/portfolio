@@ -21,7 +21,7 @@ export const firstOpensourceDetail = {
         category: 'Frontend Core',
         items: [
           { name: 'Vanilla JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
-          { name: 'HTML5', icon: <SiHtml5 color="#E34F26" /> },
+          { name: 'HTML', icon: <SiHtml5 color="#E34F26" /> },
           { name: 'Vanilla CSS', icon: <SiCss color="#1572B6" /> }
         ]
       },

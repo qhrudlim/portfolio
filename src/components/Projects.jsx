@@ -1,10 +1,14 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { 
   portfolioSummary, jipchakSummary, firstOpensourceSummary, 
   biotwinSummary, docqRefactorSummary, docqSummary 
 } from './projectsData';
+import { projectCategories } from '../data/projects/projectCategories';
+import ProjectFilters from './projects/ProjectFilters';
+import ProjectTimelineItem from './projects/ProjectTimelineItem';
 
 const Projects = () => {
+  const [filter, setFilter] = useState('all');
   const projects = [
     portfolioSummary,
     jipchakSummary,
@@ -13,26 +17,21 @@ const Projects = () => {
     docqRefactorSummary,
     docqSummary
   ];
+  const filteredProjects = filter === 'all'
+    ? projects
+    : projects.filter((project) => project.category === filter);
 
   return (
     <section id="projects" className="section animate-reveal">
+      <ProjectFilters
+        categories={projectCategories}
+        selected={filter}
+        onSelect={setFilter}
+      />
+
       <div className="timeline-container">
-        {projects.map((project) => (
-          <div key={project.id} className="timeline-item">
-            <div className="timeline-dot" style={{ top: '2.5rem' }}></div>
-            <Link to={`/project/${project.id}`} className="project-card-link">
-              <div className="project-card">
-                <h3>{project.title}</h3>
-                <p className="project-desc">{project.description}</p>
-                <div className="project-meta">
-                  <div className="tech-stack">
-                    <strong>Tech:</strong> {project.tech.join(', ')}
-                  </div>
-                </div>
-                <div className="click-hint">자세히 보기 →</div>
-              </div>
-            </Link>
-          </div>
+        {filteredProjects.map((project) => (
+          <ProjectTimelineItem key={project.id} project={project} />
         ))}
       </div>
     </section>

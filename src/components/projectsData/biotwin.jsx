@@ -25,6 +25,7 @@ export const biotwinDetail = {
     grouped: [
       {
         category: 'Frontend (UI/UX & Visualization) - 담당 기술',
+        members: '1 member',
         items: [
           { name: 'React', icon: <SiReact color="#61DAFB" /> },
           { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
@@ -36,6 +37,7 @@ export const biotwinDetail = {
       },
       { 
         category: 'Backend & Data Stream', 
+        members: '2 members',
         items: [
           { name: 'Java', icon: <FaJava color="#007396" /> },
           { name: 'Spring Boot', icon: <SiSpringboot color="#6DB33F" /> },
@@ -46,6 +48,7 @@ export const biotwinDetail = {
       },
       { 
         category: 'AI Analysis & Simulation',
+        members: '2 members',
         items: [
           { name: 'Python', icon: <SiPython color="#3776AB" /> },
           { name: 'MLflow', icon: <SiMlflow color="#0194E2" /> },
@@ -56,6 +59,7 @@ export const biotwinDetail = {
       },
       { 
         category: 'DevOps & Infra',
+        members: '1 member',
         items: [
           { name: 'Docker', icon: <SiDocker color="#2496ED" /> },
           { name: 'Jenkins', icon: <SiJenkins color="#D24939" /> }

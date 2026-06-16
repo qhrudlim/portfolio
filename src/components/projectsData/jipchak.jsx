@@ -27,6 +27,7 @@ export const jipchakDetail = {
     grouped: [
       {
         category: 'Frontend (웹 클라이언트) - 담당 기술',
+        members: '2 members',
         items: [
           { name: 'React', icon: <SiReact color="#61DAFB" /> },
           { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
@@ -40,6 +41,7 @@ export const jipchakDetail = {
       },
       { 
         category: 'Backend (API & 실시간 서버)', 
+        members: '1 member',
         items: [
           { name: 'Java', icon: <FaJava color="#007396" /> },
           { name: 'Spring Boot', icon: <SiSpringboot color="#6DB33F" /> },
@@ -52,6 +54,7 @@ export const jipchakDetail = {
       },
       { 
         category: 'AI Analysis & CV', 
+        members: '1 member',
         items: [
           { name: 'Python', icon: <SiPython color="#3776AB" /> },
           { name: 'FastAPI', icon: <SiFastapi color="#05998B" /> },
@@ -63,6 +66,7 @@ export const jipchakDetail = {
       },
       { 
         category: 'Embedded & Infrastructure', 
+        members: '1 member',
         items: [
           { name: 'Arduino', icon: <SiArduino color="#00979D" /> },
           { name: 'Raspberry Pi', icon: <SiRaspberrypi color="#C51A4A" /> },

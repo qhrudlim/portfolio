@@ -27,6 +27,7 @@ export const docqDetail = {
     grouped: [
       {
         category: 'Frontend (웹 클라이언트) - 담당 기술',
+        members: '3 members',
         items: [
           { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
           { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
@@ -40,6 +41,7 @@ export const docqDetail = {
       },
       { 
         category: 'Backend (API & 게임 서버)', 
+        members: '1 member',
         items: [
           { name: 'Java', icon: <FaJava color="#007396" /> },
           { name: 'Spring Boot', icon: <SiSpringboot color="#6DB33F" /> },
@@ -52,6 +54,7 @@ export const docqDetail = {
       },
       { 
         category: 'AI (데이터 처리)', 
+        members: '1 member',
         items: [
           { name: 'Python', icon: <SiPython color="#3776AB" /> },
           { name: 'FastAPI', icon: <SiFastapi color="#05998B" /> },
@@ -61,6 +64,7 @@ export const docqDetail = {
       },
       { 
         category: 'Infra & DevOps', 
+        members: '1 member',
         items: [
           { name: 'AWS (EC2, RDS)', icon: <FaAws color="#FF9900" /> },
           { name: 'Docker', icon: <SiDocker color="#2496ED" /> }

@@ -2,6 +2,13 @@ import { FaTools } from 'react-icons/fa';
 import SectionTitle from './SectionTitle';
 import TechTag from './TechTag';
 
+const TechGroupTitle = ({ group }) => (
+  <h4 className="tech-sub-title">
+    <span>{group.category}</span>
+    {group.members && <span className="tech-members-badge">{group.members}</span>}
+  </h4>
+);
+
 const TechSection = ({ tech }) => (
   <section className="detail-section card">
     <SectionTitle icon={<FaTools className="title-icon" />}>사용 기술</SectionTitle>
@@ -13,7 +20,7 @@ const TechSection = ({ tech }) => (
       <div className="structured-tech-display">
         {tech.grouped.map((group) => (
           <div key={group.category} className="tech-subsection">
-            <h4 className="tech-sub-title">{group.category}</h4>
+            <TechGroupTitle group={group} />
             <div className="detail-skill-tags">
               {group.items.map((item) => <TechTag key={item.name} tech={item} />)}
             </div>

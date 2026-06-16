@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { 
   SiReact, SiVuedotjs, SiHtml5, SiTailwindcss, 
   SiDjango, SiJavascript, SiTypescript, SiPython, 
@@ -238,11 +239,11 @@ const Skills = () => {
         ))}
       </div>
 
-      {selectedSkill && (
+      {selectedSkill && createPortal((
         <div
           className="skill-modal-backdrop"
           role="presentation"
-          onMouseDown={(event) => {
+          onClick={(event) => {
             if (event.target === event.currentTarget) {
               setSelectedSkill(null);
             }
@@ -285,7 +286,7 @@ const Skills = () => {
             </ul>
           </article>
         </div>
-      )}
+      ), document.body)}
     </section>
   );
 };

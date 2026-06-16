@@ -1,0 +1,28 @@
+.text-icon {
+  font-weight: 900;
+  font-size: 0.75rem;
+  color: #59666C;
+  letter-spacing: -0.5px;
+}
+
+.skill-img-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.ws-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.websocket-official-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.mineru-icon {
+  width: 36px;
+  height: 36px;
+}

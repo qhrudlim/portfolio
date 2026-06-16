@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   SiReact, SiTypescript, SiVite, 
   SiSpringboot, SiSpringsecurity, SiPostgresql, SiDocker, SiJenkins,

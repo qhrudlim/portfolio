@@ -1,0 +1,54 @@
+@media (min-width: 601px) and (max-width: 900px) {
+  .skills-grid {
+    max-width: 760px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .skills-grid {
+    max-width: 980px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    max-width: var(--max-width);
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .skill-modal-backdrop {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .skill-modal {
+    padding: 1.5rem;
+    max-height: 84vh;
+  }
+
+  .skill-modal-header {
+    align-items: flex-start;
+  }
+
+  .skill-level-area {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .skill-level-boxes {
+    grid-template-columns: repeat(5, 23px);
+  }
+
+  .skill-level-box {
+    width: 23px;
+    height: 23px;
+  }
+}

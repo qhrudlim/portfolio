@@ -1,0 +1,80 @@
+.project-detail-page {
+  background-color: var(--section-bg-alt);
+  min-height: 100vh;
+}
+
+.project-hero {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+}
+
+.project-hero .container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.project-hero .back-link {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-hero .back-link:hover {
+  color: white;
+}
+
+.project-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.achievement-badge {
+  background-color: #f1c40f;
+  color: #333;
+  padding: 0.4rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.project-info-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1rem;
+}
+
+.project-info-grid .info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.project-info-grid .icon {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.project-main {
+  max-width: 900px;
+  margin: -3rem auto 0;
+  padding: 0 2rem 4rem;
+  position: relative;
+  z-index: 10;
+}

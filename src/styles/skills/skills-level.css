@@ -1,0 +1,61 @@
+.skill-level-area {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 0;
+  margin-bottom: 1.2rem;
+  border-top: 1px solid #edf1f5;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.skill-level-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, 26px);
+  gap: 0.45rem;
+}
+
+.skill-level-box {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid #cfd8e3;
+  background: #f4f7fa;
+}
+
+.skill-level-box.filled {
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.22);
+}
+
+.skill-level-text {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.skill-description-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.skill-description-list li {
+  position: relative;
+  padding-left: 1rem;
+  color: #4b5563;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.skill-description-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-color);
+}

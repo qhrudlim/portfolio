@@ -1,0 +1,96 @@
+.about-hero {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(80vh - var(--navbar-height));
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.about-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-photo {
+  width: 320px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1.5;
+}
+
+.hero-name {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.hero-role {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.hero-philosophy {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1.5rem;
+}
+
+.about-bio {
+  color: var(--light-text);
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image-wrapper {
+    justify-content: center;
+  }
+
+  .profile-photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-name {
+    font-size: 3rem;
+  }
+
+  .hero-philosophy {
+    border-left: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+  }
+
+  .about-bio {
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    gap: 1.5rem;
+  }
+}

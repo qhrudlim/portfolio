@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   SiJavascript, SiHtml5, SiCss, SiGit, SiGithub, SiGithubactions, SiGithubpages
 } from 'react-icons/si';

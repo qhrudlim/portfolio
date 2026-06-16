@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   SiVuedotjs, SiTypescript, SiVite, SiPinia, 
   SiThreedotjs, SiTailwindcss, SiBlender, SiUnity,

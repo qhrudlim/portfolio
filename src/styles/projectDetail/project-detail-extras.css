@@ -1,0 +1,102 @@
+.step-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.step-arrow {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  margin: -0.5rem 0;
+}
+
+.step-item.error { border-left-color: #ef4444; }
+.step-item.error .step-label { color: #ef4444; }
+.step-item.analysis { border-left-color: #f59e0b; }
+.step-item.analysis .step-label { color: #f59e0b; }
+.step-item.success { border-left-color: #10b981; }
+.step-item.success .step-label { color: #10b981; }
+.step-item.reason { border-left-color: var(--primary-color); }
+.step-item.reason .step-label { color: var(--primary-color); }
+
+.step-item.result {
+  border-left-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.03);
+  padding: 0.8rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 0.5rem;
+}
+
+.step-item.result .step-label {
+  color: #3b82f6;
+}
+
+.challenge-item {
+  border-left: 4px solid #eee;
+  padding-left: 1.5rem;
+}
+
+.challenge-item .label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.challenge-item .issue .label { color: #e74c3c; }
+.challenge-item .solution .label { color: #2ecc71; margin-top: 1rem; }
+
+.contribution-list {
+  list-style: none;
+}
+
+.contribution-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.contribution-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: 800;
+}
+
+.retrospective-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.retrospective-item {
+  padding: 1.5rem;
+  background: rgba(var(--primary-rgb), 0.02);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.retrospective-item h4 {
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.retrospective-item p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .challenge-body,
+  .retrospective-grid {
+    grid-template-columns: 1fr;
+  }
+}

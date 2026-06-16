@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   SiReact, SiJavascript, SiCss, SiVite, SiThreedotjs
 } from 'react-icons/si';

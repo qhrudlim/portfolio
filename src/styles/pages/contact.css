@@ -1,0 +1,63 @@
+.contact-page {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card {
+  background: var(--section-bg-alt);
+  padding: 4rem;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-intro {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: var(--light-text);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.social-links-page {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-links-page a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.social-links-page a:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}

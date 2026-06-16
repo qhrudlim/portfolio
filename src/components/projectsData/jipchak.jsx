@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   SiReact, SiTypescript, SiVite, SiTailwindcss, 
   SiSpringboot, SiSpringsecurity, SiMysql, SiRedis, SiFastapi, SiPython,

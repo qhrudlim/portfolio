@@ -271,7 +271,7 @@ export const fallbackSkillDetails = {
   },
   Mattermost: {
     level: 5,
-    levelText: '상',
+    levelText: '중상',
     description: [
       '팀 커뮤니케이션 및 프로젝트 공유를 위한 협업 도구 활용 경험',
       '진행 상황 공유와 이슈 논의를 위한 채널 기반 소통 경험',

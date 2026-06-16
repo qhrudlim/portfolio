@@ -1,9 +1,10 @@
 import { 
-  SiReact, SiTypescript, SiVite, SiTailwindcss, 
-  SiSpringboot, SiSpringsecurity, SiMysql, SiRedis, SiFastapi, SiPython,
-  SiArduino, SiRaspberrypi, SiDocker, SiJenkins, SiNginx
+  SiArduino, SiAxios, SiDocker, SiFastapi, SiFramer, SiJenkins,
+  SiMysql, SiNginx, SiOpencv, SiPytorch, SiPython, SiRaspberrypi, SiReact,
+  SiRedis, SiSpringboot, SiSpringsecurity, SiTailwindcss, SiTypescript, SiVite,
+  SiYolo
 } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
+import { FaChartLine, FaCubes, FaJava } from 'react-icons/fa';
 
 export const jipchakSummary = {
   id: 'jipchak',
@@ -26,11 +27,11 @@ export const jipchakDetail = {
           { name: 'React', icon: <SiReact color="#61DAFB" /> },
           { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
           { name: 'Vite', icon: <SiVite color="#646CFF" /> },
-          { name: 'Framer Motion' },
-          { name: 'Zustand' },
+          { name: 'Framer Motion', icon: <SiFramer color="#0055FF" /> },
+          { name: 'Zustand', icon: <FaCubes color="#433928" /> },
           { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
-          { name: 'Recharts' },
-          { name: 'Axios' }
+          { name: 'Recharts', icon: <FaChartLine color="#22B5BF" /> },
+          { name: 'Axios', icon: <SiAxios color="#5A29E4" /> }
         ]
       },
       { 
@@ -50,9 +51,9 @@ export const jipchakDetail = {
         items: [
           { name: 'Python', icon: <SiPython color="#3776AB" /> },
           { name: 'FastAPI', icon: <SiFastapi color="#05998B" /> },
-          { name: 'PyTorch' },
-          { name: 'OpenCV' },
-          { name: 'YOLOv8 (Seg/Detection)' },
+          { name: 'PyTorch', icon: <SiPytorch color="#EE4C2C" /> },
+          { name: 'OpenCV', icon: <SiOpencv color="#5C3EE8" /> },
+          { name: 'YOLOv8 (Seg/Detection)', icon: <SiYolo color="#00FFFF" /> },
           { name: 'MsgPack' }
         ] 
       },

@@ -1,6 +1,7 @@
 import { 
-  SiReact, SiJavascript, SiCss, SiVite, SiThreedotjs
+  SiCss, SiGreensock, SiJavascript, SiReact, SiThreedotjs, SiVite
 } from 'react-icons/si';
+import { FaCubes } from 'react-icons/fa';
 
 export const docqRefactorSummary = {
   id: 'docq-refactor',
@@ -29,9 +30,9 @@ export const docqRefactorDetail = {
       {
         category: 'State & 3D Rendering',
         items: [
-          { name: 'Zustand' },
+          { name: 'Zustand', icon: <FaCubes color="#433928" /> },
           { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
-          { name: 'GSAP' },
+          { name: 'GSAP', icon: <SiGreensock color="#88CE02" /> },
           { name: 'WebSocket (STOMP)' }
         ]
       }

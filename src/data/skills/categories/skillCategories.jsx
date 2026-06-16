@@ -2,11 +2,11 @@ import {
   SiBlender, SiDjango, SiDocker, SiFigma, SiFramer, SiGit, SiGithub,
   SiGithubactions, SiGithubpages, SiGitlab, SiGooglecolab, SiGreensock,
   SiHtml5, SiJavascript, SiJira, SiJupyter, SiLinux, SiMattermost,
-  SiMysql, SiNumpy, SiPandas, SiPinia, SiPostman, SiPython, SiReact,
+  SiAxios, SiMysql, SiNumpy, SiPandas, SiPinia, SiPostman, SiPython, SiReact,
   SiTailwindcss, SiThreedotjs, SiTypescript, SiUnity, SiVite, SiVuedotjs
 } from 'react-icons/si';
 import {
-  FaAws, FaChartLine, FaCss3Alt, FaCubes, FaExchangeAlt, FaJava, FaMicrochip
+  FaAws, FaChartLine, FaCss3Alt, FaCubes, FaJava, FaMicrochip
 } from 'react-icons/fa';
 
 export const skillCategories = [
@@ -29,7 +29,7 @@ export const skillCategories = [
     skills: [
       { name: 'Zustand', icon: <FaCubes color="#433928" /> },
       { name: 'Pinia', icon: <SiPinia color="#FFD12F" /> },
-      { name: 'Axios', icon: <FaExchangeAlt color="#5A29E4" /> },
+      { name: 'Axios', icon: <SiAxios color="#5A29E4" /> },
       { name: 'Framer Motion', icon: <SiFramer color="#0055FF" /> },
       { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
       { name: 'GSAP', icon: <SiGreensock color="#88CE02" /> },

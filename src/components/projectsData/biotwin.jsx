@@ -1,9 +1,8 @@
 import { 
-  SiReact, SiTypescript, SiVite, 
-  SiSpringboot, SiSpringsecurity, SiPostgresql, SiDocker, SiJenkins,
-  SiPython
+  SiAxios, SiDocker, SiFlyway, SiJenkins, SiMlflow, SiPostgresql, SiPython,
+  SiReact, SiSpringboot, SiSpringsecurity, SiTypescript, SiVite
 } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
+import { FaChartLine, FaCubes, FaJava } from 'react-icons/fa';
 
 export const biotwinSummary = {
   id: 'biotwin',
@@ -26,9 +25,9 @@ export const biotwinDetail = {
           { name: 'React', icon: <SiReact color="#61DAFB" /> },
           { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
           { name: 'Vite', icon: <SiVite color="#646CFF" /> },
-          { name: 'Recharts' },
-          { name: 'Zustand' },
-          { name: 'Axios' }
+          { name: 'Recharts', icon: <FaChartLine color="#22B5BF" /> },
+          { name: 'Zustand', icon: <FaCubes color="#433928" /> },
+          { name: 'Axios', icon: <SiAxios color="#5A29E4" /> }
         ]
       },
       { 
@@ -38,14 +37,14 @@ export const biotwinDetail = {
           { name: 'Spring Boot', icon: <SiSpringboot color="#6DB33F" /> },
           { name: 'Spring Security', icon: <SiSpringsecurity color="#6DB33F" /> },
           { name: 'PostgreSQL', icon: <SiPostgresql color="#4479A1" /> },
-          { name: 'Flyway' }
+          { name: 'Flyway', icon: <SiFlyway color="#CC0200" /> }
         ] 
       },
       { 
         category: 'AI Analysis & Simulation',
         items: [
           { name: 'Python', icon: <SiPython color="#3776AB" /> },
-          { name: 'MLflow' },
+          { name: 'MLflow', icon: <SiMlflow color="#0194E2" /> },
           { name: 'EnKF' },
           { name: 'GRU' },
           { name: 'ODE' }

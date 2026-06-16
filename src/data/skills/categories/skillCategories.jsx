@@ -46,7 +46,7 @@ export const skillCategories = [
       { name: 'Java', icon: <FaJava color="#007396" /> },
       { name: 'Pandas', icon: <SiPandas color="#150458" /> },
       { name: 'Numpy', icon: <SiNumpy color="#013243" /> },
-      { name: 'Jupyter', icon: <SiJupyter color="#F37626" /> },
+      { name: 'Jupyter Notebook', icon: <SiJupyter color="#F37626" /> },
       { name: 'Google Colab', icon: <SiGooglecolab color="#F9AB00" /> }
     ]
   },

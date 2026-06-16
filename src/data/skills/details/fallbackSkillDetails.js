@@ -149,7 +149,7 @@ export const fallbackSkillDetails = {
       '데이터 계산 결과를 시각화 화면에 연결하는 구조 이해'
     ]
   },
-  Jupyter: {
+  'Jupyter Notebook': {
     level: 2,
     levelText: '중하',
     description: [

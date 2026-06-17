@@ -24,16 +24,16 @@ export const firstOpensourceDetail = {
       {
         category: 'Frontend Core',
         items: [
-          { name: 'Vanilla JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
-          { name: 'HTML', icon: <SiHtml5 color="#E34F26" /> },
-          { name: 'Vanilla CSS', icon: <SiCss color="#1572B6" /> }
+          { name: 'Vanilla JavaScript', icon: <SiJavascript color="#F7DF1E" />, myTech: true },
+          { name: 'HTML', icon: <SiHtml5 color="#E34F26" />, myTech: true },
+          { name: 'Vanilla CSS', icon: <SiCss color="#1572B6" />, myTech: true }
         ]
       },
       {
         category: 'Version Control & Deployment',
         items: [
-          { name: 'Git', icon: <SiGit color="#F05032" /> },
-          { name: 'GitHub Flow', icon: <SiGithub color="#181717" /> },
+          { name: 'Git', icon: <SiGit color="#F05032" />, myTech: true },
+          { name: 'GitHub Flow', icon: <SiGithub color="#181717" />, myTech: true },
           { name: 'GitHub Actions', icon: <SiGithubactions color="#2088FF" /> },
           { name: 'GitHub Pages', icon: <SiGithubpages color="#222222" /> }
         ]

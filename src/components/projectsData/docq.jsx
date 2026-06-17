@@ -26,7 +26,7 @@ export const docqDetail = {
   tech: {
     grouped: [
       {
-        category: 'Frontend (웹 클라이언트) - 담당 기술',
+        category: 'Frontend (웹 클라이언트)',
         members: '3 members',
         items: [
           { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },

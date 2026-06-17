@@ -26,7 +26,7 @@ export const jipchakDetail = {
   tech: {
     grouped: [
       {
-        category: 'Frontend (웹 클라이언트) - 담당 기술',
+        category: 'Frontend (웹 클라이언트)',
         members: '2 members',
         items: [
           { name: 'React', icon: <SiReact color="#61DAFB" /> },

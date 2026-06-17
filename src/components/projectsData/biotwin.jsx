@@ -24,7 +24,7 @@ export const biotwinDetail = {
   tech: {
     grouped: [
       {
-        category: 'Frontend (UI/UX & Visualization) - 담당 기술',
+        category: 'Frontend (UI/UX & Visualization)',
         members: '2 members',
         items: [
           { name: 'React', icon: <SiReact color="#61DAFB" /> },

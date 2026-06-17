@@ -25,7 +25,7 @@ export const biotwinDetail = {
     grouped: [
       {
         category: 'Frontend (UI/UX & Visualization) - 담당 기술',
-        members: '1 member',
+        members: '2 members',
         items: [
           { name: 'React', icon: <SiReact color="#61DAFB" /> },
           { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
@@ -48,7 +48,7 @@ export const biotwinDetail = {
       },
       { 
         category: 'AI Analysis & Simulation',
-        members: '2 members',
+        members: '1 member',
         items: [
           { name: 'Python', icon: <SiPython color="#3776AB" /> },
           { name: 'MLflow', icon: <SiMlflow color="#0194E2" /> },

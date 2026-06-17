@@ -29,14 +29,14 @@ export const docqDetail = {
         category: 'Frontend (웹 클라이언트)',
         members: '3 members',
         items: [
-          { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" /> },
-          { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
-          { name: 'Vite', icon: <SiVite color="#646CFF" /> },
-          { name: 'Pinia', icon: <SiPinia color="#FFD12F" /> },
-          { name: 'Three.js', icon: <SiThreedotjs color="#000000" /> },
-          { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
-          { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
-          { name: 'Unity', icon: <SiUnity color="#000000" /> }
+          { name: 'Vue.js', icon: <SiVuedotjs color="#4FC08D" />, myTech: true },
+          { name: 'TypeScript', icon: <SiTypescript color="#3178C6" />, myTech: true },
+          { name: 'Vite', icon: <SiVite color="#646CFF" />, myTech: true },
+          { name: 'Pinia', icon: <SiPinia color="#FFD12F" />, myTech: true },
+          { name: 'Three.js', icon: <SiThreedotjs color="#000000" />, myTech: true },
+          { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" />, myTech: true },
+          { name: 'Blender', icon: <SiBlender color="#F5792A" />, myTech: true },
+          { name: 'Unity', icon: <SiUnity color="#000000" />, myTech: true }
         ]
       },
       { 

@@ -1,4 +1,4 @@
-import { FaTools } from 'react-icons/fa';
+import { FaStar, FaTools } from 'react-icons/fa';
 import SectionTitle from './SectionTitle';
 import TechTag from './TechTag';
 
@@ -11,7 +11,13 @@ const TechGroupTitle = ({ group }) => (
 
 const TechSection = ({ tech }) => (
   <section className="detail-section card">
-    <SectionTitle icon={<FaTools className="title-icon" />}>사용 기술</SectionTitle>
+    <div className="detail-section-heading">
+      <SectionTitle icon={<FaTools className="title-icon" />}>사용 기술</SectionTitle>
+      <div className="my-tech-legend">
+        <FaStar aria-hidden="true" />
+        <span>My Tech</span>
+      </div>
+    </div>
     {Array.isArray(tech) ? (
       <div className="detail-skill-tags">
         {tech.map((item) => <TechTag key={item.name} tech={item} />)}

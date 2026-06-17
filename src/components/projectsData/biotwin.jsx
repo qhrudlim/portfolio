@@ -27,12 +27,12 @@ export const biotwinDetail = {
         category: 'Frontend (UI/UX & Visualization)',
         members: '2 members',
         items: [
-          { name: 'React', icon: <SiReact color="#61DAFB" /> },
-          { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
-          { name: 'Vite', icon: <SiVite color="#646CFF" /> },
-          { name: 'Recharts', icon: <FaChartLine color="#22B5BF" /> },
-          { name: 'Zustand', icon: <FaCubes color="#433928" /> },
-          { name: 'Axios', icon: <SiAxios color="#5A29E4" /> }
+          { name: 'React', icon: <SiReact color="#61DAFB" />, myTech: true },
+          { name: 'TypeScript', icon: <SiTypescript color="#3178C6" />, myTech: true },
+          { name: 'Vite', icon: <SiVite color="#646CFF" />, myTech: true },
+          { name: 'Recharts', icon: <FaChartLine color="#22B5BF" />, myTech: true },
+          { name: 'Zustand', icon: <FaCubes color="#433928" />, myTech: true },
+          { name: 'Axios', icon: <SiAxios color="#5A29E4" />, myTech: true }
         ]
       },
       { 

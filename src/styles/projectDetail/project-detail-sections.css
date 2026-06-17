@@ -17,6 +17,33 @@
   text-align: left;
 }
 
+.detail-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail-section-heading .section-title {
+  margin-bottom: 0;
+}
+
+.my-tech-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--light-text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.my-tech-legend svg {
+  color: #9a7b2f;
+  font-size: 0.9rem;
+}
+
 .title-icon {
   color: var(--accent-color);
 }
@@ -41,7 +68,28 @@
   align-items: center;
   gap: 0.8rem;
   font-weight: 600;
+  position: relative;
   transition: transform 0.2s;
+}
+
+.detail-tag.my-tech {
+  padding-top: 0.95rem;
+}
+
+.my-tech-badge {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.35rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 999px;
+  background: white;
+  color: #9a7b2f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
 }
 
 .detail-tag:hover {
@@ -98,4 +146,10 @@
   align-items: center;
   justify-content: center;
   color: #aaa;
+}
+
+@media (max-width: 600px) {
+  .detail-section-heading {
+    align-items: flex-start;
+  }
 }

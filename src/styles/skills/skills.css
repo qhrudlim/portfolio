@@ -11,6 +11,15 @@
   justify-content: center;
 }
 
+.skills-hint {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  color: var(--light-text);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
 .skills-grid {
   width: 100%;
   max-width: 1200px;
@@ -85,15 +94,6 @@
 .skill-name {
   font-size: 0.85rem;
   white-space: nowrap;
-}
-
-.skills-hint {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto 2rem;
-  color: var(--light-text);
-  font-size: 0.95rem;
-  text-align: center;
 }
 
 @media (min-width: 1200px) {

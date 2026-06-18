@@ -24,7 +24,7 @@ const SkillModal = ({ skill, onClose }) => {
           </div>
         </header>
 
-        <SkillLevel level={skill.level} levelText={skill.levelText} />
+        <SkillLevel level={skill.level} />
 
         <ul className="skill-description-list">
           {skill.description.map((item) => (

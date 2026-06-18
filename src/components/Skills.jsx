@@ -24,6 +24,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="section animate-reveal">
+      <p className="skills-hint">Click a skill to view details</p>
       <div className="skills-grid">
         {skillCategories.map((category) => (
           <SkillCategory

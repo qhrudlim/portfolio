@@ -1,4 +1,5 @@
 import { FaStar } from 'react-icons/fa';
+import TechIcon from './TechIcon';
 
 const TechTag = ({ tech }) => (
   <div className={`detail-tag ${tech.myTech ? 'my-tech' : ''}`}>
@@ -7,7 +8,7 @@ const TechTag = ({ tech }) => (
         <FaStar aria-hidden="true" />
       </span>
     )}
-    {tech.icon && <span className="icon">{tech.icon}</span>}
+    <TechIcon tech={tech} />
     <span>{tech.name}</span>
   </div>
 );

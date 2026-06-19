@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { skillCategories } from '../data/skills/categories/skillCategories';
+import { buildSkillCategories } from '../utils/skills/buildSkillCategories';
 import SkillCategory from './skills/SkillCategory';
 import SkillModal from './skills/SkillModal';
+
+const displaySkillCategories = buildSkillCategories(skillCategories);
 
 const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
@@ -26,7 +29,7 @@ const Skills = () => {
     <section id="skills" className="section animate-reveal">
       <p className="skills-hint">Click a skill to view details</p>
       <div className="skills-grid">
-        {skillCategories.map((category) => (
+        {displaySkillCategories.map((category) => (
           <SkillCategory
             key={category.title}
             category={category}

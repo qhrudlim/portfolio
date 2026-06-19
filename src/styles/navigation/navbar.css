@@ -53,6 +53,8 @@
   font-size: 1.8rem;
   cursor: pointer;
   color: var(--primary-color);
+  border: 0;
+  background: transparent;
 }
 
 @media (max-width: 768px) {

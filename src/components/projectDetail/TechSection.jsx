@@ -18,22 +18,16 @@ const TechSection = ({ tech }) => (
         <span>My Tech</span>
       </div>
     </div>
-    {Array.isArray(tech) ? (
-      <div className="detail-skill-tags">
-        {tech.map((item) => <TechTag key={item.name} tech={item} />)}
-      </div>
-    ) : (
-      <div className="structured-tech-display">
-        {tech.grouped.map((group) => (
-          <div key={group.category} className="tech-subsection">
-            <TechGroupTitle group={group} />
-            <div className="detail-skill-tags">
-              {group.items.map((item) => <TechTag key={item.name} tech={item} />)}
-            </div>
+    <div className="structured-tech-display">
+      {tech.grouped.map((group) => (
+        <div key={group.category} className="tech-subsection">
+          <TechGroupTitle group={group} />
+          <div className="detail-skill-tags">
+            {group.items.map((item) => <TechTag key={item.name} tech={item} />)}
           </div>
-        ))}
-      </div>
-    )}
+        </div>
+      ))}
+    </div>
   </section>
 );
 

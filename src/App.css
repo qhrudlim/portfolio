@@ -6,6 +6,8 @@
 @import './styles/pages/about.css';
 @import './styles/pages/contact.css';
 @import './styles/pages/projects.css';
+@import './styles/pages/project-tech-list.css';
+@import './styles/pages/projects-responsive.css';
 @import './styles/pages/timeline.css';
 @import './styles/skills/skills.css';
 @import './styles/skills/skills-modal.css';
@@ -19,3 +21,4 @@
 @import './styles/projectDetail/project-detail-icons.css';
 @import './styles/projectDetail/project-detail-challenges.css';
 @import './styles/projectDetail/project-detail-extras.css';
+@import './styles/projectDetail/project-detail-retrospective.css';

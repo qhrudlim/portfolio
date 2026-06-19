@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { navItems } from '../data/navigation/navItems';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,27 +19,28 @@ const Navbar = () => {
       <div className="nav-container">
         <NavLink to="/" className="nav-logo" onClick={closeMenu}>BoGyeong Lim</NavLink>
         
-        {/* Hamburger Icon */}
-        <div className="menu-icon" onClick={toggleMenu}>
+        <button
+          type="button"
+          className="menu-icon"
+          aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isOpen}
+          onClick={toggleMenu}
+        >
           {isOpen ? <FaTimes /> : <FaBars />}
-        </div>
+        </button>
 
         <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
-            <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>About</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/skills" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Skills</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/timeline" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Timeline</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Projects</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Contact</NavLink>
-          </li>
+          {navItems.map((item) => (
+            <li key={item.to} className="nav-item">
+              <NavLink
+                to={item.to}
+                className={({ isActive }) => isActive ? "active" : ""}
+                onClick={closeMenu}
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

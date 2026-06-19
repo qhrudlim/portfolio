@@ -1,25 +1,14 @@
 import { useState } from 'react';
-import { 
-  portfolioSummary, jipchakSummary, firstOpensourceSummary, 
-  biotwinSummary, docqRefactorSummary, docqSummary 
-} from '../data/projects';
+import { projectSummaries } from '../data/projects/projectRegistry';
 import { projectCategories } from '../data/projects/categories/projectCategories';
 import ProjectFilters from './projects/ProjectFilters';
 import ProjectTimelineItem from './projects/ProjectTimelineItem';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
-  const projects = [
-    portfolioSummary,
-    jipchakSummary,
-    firstOpensourceSummary,
-    biotwinSummary,
-    docqRefactorSummary,
-    docqSummary
-  ];
   const filteredProjects = filter === 'all'
-    ? projects
-    : projects.filter((project) => project.category === filter);
+    ? projectSummaries
+    : projectSummaries.filter((project) => project.category === filter);
 
   return (
     <section id="projects" className="section animate-reveal">

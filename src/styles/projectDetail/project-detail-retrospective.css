@@ -1,0 +1,32 @@
+.retrospective-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.retrospective-item {
+  padding: 1.5rem;
+  background: rgba(var(--primary-rgb), 0.02);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.retrospective-item h4 {
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.retrospective-item p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .retrospective-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

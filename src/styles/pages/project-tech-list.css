@@ -1,0 +1,18 @@
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tech-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.8rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: #f4f4f4;
+  color: #333;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+

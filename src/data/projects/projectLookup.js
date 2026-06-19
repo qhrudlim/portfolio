@@ -1,17 +1,5 @@
-import {
-  biotwinDetail,
-  docqDetail,
-  docqRefactorDetail,
-  firstOpensourceDetail,
-  jipchakDetail,
-  portfolioDetail
-} from './index';
+import { projectRegistry } from './projectRegistry';
 
-export const projectData = {
-  portfolio: portfolioDetail,
-  jipchak: jipchakDetail,
-  'first-opensource': firstOpensourceDetail,
-  biotwin: biotwinDetail,
-  'docq-refactor': docqRefactorDetail,
-  docq: docqDetail
-};
+export const projectData = Object.fromEntries(
+  projectRegistry.map(({ detail }) => [detail.id, detail])
+);

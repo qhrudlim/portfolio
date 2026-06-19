@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+  .project-card {
+    padding: 1.35rem;
+  }
+
+  .project-card-header {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+

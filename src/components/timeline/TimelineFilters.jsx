@@ -1,15 +1,13 @@
+import FilterTabs from '../common/FilterTabs';
+
 const TimelineFilters = ({ categories, selected, onSelect }) => (
-  <div className="filter-container">
-    {categories.map((category) => (
-      <button
-        key={category}
-        className={`filter-btn ${selected === category ? 'active' : ''}`}
-        onClick={() => onSelect(category)}
-      >
-        {category}
-      </button>
-    ))}
-  </div>
+  <FilterTabs
+    items={categories}
+    selected={selected}
+    onSelect={onSelect}
+    getKey={(category) => category}
+    getLabel={(category) => category}
+  />
 );
 
 export default TimelineFilters;

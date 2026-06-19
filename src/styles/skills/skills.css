@@ -95,10 +95,3 @@
   font-size: 0.85rem;
   white-space: nowrap;
 }
-
-@media (min-width: 1200px) {
-  .skills-grid {
-    gap: 1.2rem;
-    padding: 0 1.5rem;
-  }
-}

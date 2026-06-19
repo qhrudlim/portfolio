@@ -1,4 +1,5 @@
 import { FaHistory } from 'react-icons/fa';
+import RetrospectiveItem from './RetrospectiveItem';
 import SectionTitle from './SectionTitle';
 
 const RetrospectiveSection = ({ retrospective }) => {
@@ -9,10 +10,7 @@ const RetrospectiveSection = ({ retrospective }) => {
       <SectionTitle icon={<FaHistory className="title-icon" />}>프로젝트 회고</SectionTitle>
       <div className="retrospective-grid">
         {retrospective.map((item) => (
-          <div key={item.title} className="retrospective-item">
-            <h4>{item.title}</h4>
-            <p>{item.content}</p>
-          </div>
+          <RetrospectiveItem key={item.title} item={item} />
         ))}
       </div>
     </section>

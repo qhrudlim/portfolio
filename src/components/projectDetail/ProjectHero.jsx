@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaCalendarAlt, FaUserTag } from 'react-icons/fa';
+import ProjectInfoItem from './ProjectInfoItem';
 
 const ProjectHero = ({ project }) => (
   <header className="project-hero">
@@ -12,14 +13,12 @@ const ProjectHero = ({ project }) => (
           <span className="achievement-badge">{project.achievements}</span>
         )}
         <div className="project-info-grid">
-          <div className="info-item">
-            <FaCalendarAlt className="icon" />
-            <span>{project.period}</span>
-          </div>
-          <div className="info-item">
-            <FaUserTag className="icon" />
-            <span>{project.role}</span>
-          </div>
+          <ProjectInfoItem icon={<FaCalendarAlt className="icon" />}>
+            {project.period}
+          </ProjectInfoItem>
+          <ProjectInfoItem icon={<FaUserTag className="icon" />}>
+            {project.role}
+          </ProjectInfoItem>
         </div>
       </div>
     </div>

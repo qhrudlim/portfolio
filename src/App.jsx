@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import AppFooter from './components/common/AppFooter';
+import ScrollToTop from './components/common/ScrollToTop';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -8,16 +9,6 @@ import ProjectDetail from './components/ProjectDetail';
 import Contact from './components/Contact';
 import Timeline from './components/Timeline';
 import './App.css';
-
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
 
 function App() {
   return (
@@ -35,9 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        <footer className="footer">
-          <p>© 2026 Lim Bo-gyeong. All rights reserved.</p>
-        </footer>
+        <AppFooter />
       </div>
     </Router>
   );

@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { projectData } from '../data/projectDetail/projectLookup';
+import { projectData } from '../data/projects/projectLookup';
 import ChallengesSection from './projectDetail/ChallengesSection';
 import ContributionsSection from './projectDetail/ContributionsSection';
 import OverviewSection from './projectDetail/OverviewSection';

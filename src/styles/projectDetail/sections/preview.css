@@ -1,0 +1,10 @@
+.project-image-placeholder {
+  height: 400px;
+  background-color: #f9f9f9;
+  border: 2px dashed #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}

@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { 
   portfolioSummary, jipchakSummary, firstOpensourceSummary, 
   biotwinSummary, docqRefactorSummary, docqSummary 
-} from './projectsData';
-import { projectCategories } from '../data/projects/projectCategories';
+} from '../data/projects';
+import { projectCategories } from '../data/projects/categories/projectCategories';
 import ProjectFilters from './projects/ProjectFilters';
 import ProjectTimelineItem from './projects/ProjectTimelineItem';
 

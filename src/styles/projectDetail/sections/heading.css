@@ -1,0 +1,32 @@
+.detail-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail-section-heading .section-title {
+  margin-bottom: 0;
+}
+
+.my-tech-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--light-text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.my-tech-legend svg {
+  color: #9a7b2f;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .detail-section-heading {
+    align-items: flex-start;
+  }
+}

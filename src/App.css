@@ -12,7 +12,10 @@
 @import './styles/skills/skills-level.css';
 @import './styles/skills/skills-responsive.css';
 @import './styles/projectDetail/project-detail.css';
-@import './styles/projectDetail/project-detail-sections.css';
+@import './styles/projectDetail/sections/base.css';
+@import './styles/projectDetail/sections/heading.css';
+@import './styles/projectDetail/sections/tech.css';
+@import './styles/projectDetail/sections/preview.css';
 @import './styles/projectDetail/project-detail-icons.css';
 @import './styles/projectDetail/project-detail-challenges.css';
 @import './styles/projectDetail/project-detail-extras.css';

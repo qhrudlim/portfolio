@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { navItems } from '../data/navigation/navItems';
+import { navItems } from '../data/navigation/routes';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

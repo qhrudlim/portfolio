@@ -1,7 +1,7 @@
 .skills-filter-container {
   width: 100%;
   max-width: 620px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
   padding: 0 1rem;
 }
 
@@ -28,12 +28,11 @@
 .skill-category-description {
   color: var(--light-text);
   font-size: 0.9rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
 }
 
 .selected-skill-category .skill-tags {
   grid-template-columns: repeat(2, minmax(180px, 1fr));
   justify-content: center;
 }
-

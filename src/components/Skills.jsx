@@ -2,12 +2,17 @@ import { useEffect, useState } from 'react';
 import { skillCategories } from '../data/skills/categories/skillCategories';
 import { buildSkillCategories } from '../utils/skills/buildSkillCategories';
 import SkillCategory from './skills/SkillCategory';
+import SkillCategoryFilters from './skills/SkillCategoryFilters';
 import SkillModal from './skills/SkillModal';
 
 const displaySkillCategories = buildSkillCategories(skillCategories);
 
 const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(displaySkillCategories[0].title);
+  const activeCategory = displaySkillCategories.find(
+    (category) => category.title === selectedCategory
+  );
 
   useEffect(() => {
     if (!selectedSkill) return undefined;
@@ -27,16 +32,12 @@ const Skills = () => {
 
   return (
     <section id="skills" className="section animate-reveal">
-      <p className="skills-hint">Click a skill to view details</p>
-      <div className="skills-grid">
-        {displaySkillCategories.map((category) => (
-          <SkillCategory
-            key={category.title}
-            category={category}
-            onSelectSkill={setSelectedSkill}
-          />
-        ))}
-      </div>
+      <SkillCategoryFilters
+        categories={displaySkillCategories}
+        selected={selectedCategory}
+        onSelect={setSelectedCategory}
+      />
+      <SkillCategory category={activeCategory} onSelectSkill={setSelectedSkill} />
 
       <SkillModal skill={selectedSkill} onClose={() => setSelectedSkill(null)} />
     </section>

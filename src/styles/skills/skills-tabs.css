@@ -1,0 +1,39 @@
+.skills-filter-container {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.skills-filter-desktop,
+.skills-filter-mobile {
+  display: grid;
+  gap: 0.65rem;
+  justify-items: center;
+}
+
+.skills-filter-mobile {
+  display: none;
+}
+
+.skills-filter-row {
+  margin-bottom: 0;
+}
+
+.selected-skill-category {
+  width: min(520px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.skill-category-description {
+  color: var(--light-text);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.selected-skill-category .skill-tags {
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  justify-content: center;
+}
+

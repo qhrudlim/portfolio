@@ -3,31 +3,12 @@
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 2rem 0;
+  padding: 4rem 0;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.skills-hint {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto 2rem;
-  color: var(--light-text);
-  font-size: 0.95rem;
-  text-align: center;
-}
-
-.skills-grid {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 1rem;
+  justify-content: flex-start;
 }
 
 .skill-category {
@@ -60,7 +41,7 @@
 
 .tag {
   background-color: #edf2f7;
-  padding: 0.5rem 0.4rem;
+  padding: 0.5rem 0.6rem;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -93,5 +74,7 @@
 
 .skill-name {
   font-size: 0.85rem;
-  white-space: nowrap;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }

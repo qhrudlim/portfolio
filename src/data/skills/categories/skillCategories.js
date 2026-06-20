@@ -1,71 +1,58 @@
 export const skillCategories = [
   {
-    title: 'Core Frontend',
-    description: '사용자 중심의 UI/UX와 컴포넌트 기반 설계, 모던 빌드 시스템을 활용하여 웹 서비스를 구현합니다.',
-    skills: [
-      { name: 'HTML' },
-      { name: 'CSS' },
-      { name: 'Tailwind CSS' },
-      { name: 'React' },
-      { name: 'Vue.js' },
-      { name: 'Vite' },
-      { name: 'Figma' }
-    ]
+    title: 'FE',
+    description: '사용자 화면 구현과 프론트엔드 개발 환경을 구성하는 핵심 기술입니다.',
+    skills: ['HTML', 'CSS', 'Tailwind CSS', 'React', 'Vue.js', 'Vite'].map((name) => ({ name }))
   },
   {
-    title: 'State & Interaction',
-    description: '전역 상태 관리부터 3D 렌더링 및 동적 애니메이션까지 차별화된 사용자 경험을 구현합니다.',
-    skills: [
-      { name: 'Zustand' },
-      { name: 'Pinia' },
-      { name: 'Axios' },
-      { name: 'Framer Motion' },
-      { name: 'Three.js' },
-      { name: 'GSAP' },
-      { name: 'Recharts' }
-    ]
+    title: 'UI/State',
+    description: '상태 관리, API 통신, 동적 인터랙션 구현에 활용한 기술입니다.',
+    skills: ['Zustand', 'Pinia', 'Axios', 'Framer Motion', 'GSAP'].map((name) => ({ name }))
   },
   {
-    title: 'Language & AI',
-    description: '알고리즘 문제 해결, 타입 기반 설계, 파이썬 데이터 분석 경험을 갖추고 있습니다.',
-    skills: [
-      { name: 'JavaScript' },
-      { name: 'TypeScript' },
-      { name: 'Python' },
-      { name: 'Java' },
-      { name: 'Pandas' },
-      { name: 'Numpy' },
-      { name: 'Jupyter Notebook' },
-      { name: 'Google Colab' }
-    ]
+    title: 'Visual',
+    description: '3D 렌더링, 차트 시각화, 시각 자산 제작에 활용한 기술입니다.',
+    skills: ['Three.js', 'Recharts', 'Blender', 'Unity'].map((name) => ({ name }))
   },
   {
-    title: 'BE & DB & Infra',
-    description: '서버 로직, DB 관계 설계, 클라우드 배포, 실물 기기 연동까지 시스템 전반을 구축합니다.',
-    skills: [
-      { name: 'Django' },
-      { name: 'MySQL' },
-      { name: 'Postman' },
-      { name: 'GitHub Actions' },
-      { name: 'GitHub Pages' },
-      { name: 'AWS EC2' },
-      { name: 'Docker' },
-      { name: 'Linux' }
-    ]
+    title: 'Lang',
+    description: '프로젝트 구현과 알고리즘 문제 해결에 사용한 프로그래밍 언어입니다.',
+    skills: ['JavaScript', 'TypeScript', 'Python', 'Java'].map((name) => ({ name }))
   },
   {
-    title: 'Tools & Extra',
-    description: '효율적인 협업과 형상 관리, 프로젝트 일정 관리를 위해 다양한 도구를 활용합니다.',
-    skills: [
-      { name: 'Git' },
-      { name: 'GitHub' },
-      { name: 'GitLab' },
-      { name: 'Jira' },
-      { name: 'Mattermost' },
-      { name: 'Blender' },
-      { name: 'Unity' },
-      { name: 'Hardware' }
-    ]
+    title: 'BE',
+    description: '서버 로직과 API 구현 경험에 연결되는 백엔드 기술입니다.',
+    skills: ['Django'].map((name) => ({ name }))
+  },
+  {
+    title: 'DB',
+    description: '관계형 데이터베이스 설계와 저장소 구성에 활용한 기술입니다.',
+    skills: ['MySQL'].map((name) => ({ name }))
+  },
+  {
+    title: 'AI',
+    description: 'AI 실험 환경과 수치 연산, 분석 보조 과정에서 활용한 도구입니다.',
+    skills: ['Pandas', 'Numpy', 'Jupyter Notebook', 'Google Colab'].map((name) => ({ name }))
+  },
+  {
+    title: 'Infra',
+    description: '배포 자동화, 정적 호스팅, 서버 환경 구성에 사용한 기술입니다.',
+    skills: ['GitHub Actions', 'GitHub Pages', 'AWS EC2', 'Docker', 'Linux'].map((name) => ({ name }))
+  },
+  {
+    title: 'Tools',
+    description: 'UI 설계와 API 테스트 등 개발 보조 작업에 활용한 도구입니다.',
+    skills: ['Figma', 'Postman'].map((name) => ({ name }))
+  },
+  {
+    title: 'Collab',
+    description: '버전 관리, 이슈 관리, 문서화 등 팀 협업에 활용한 도구입니다.',
+    skills: ['Git', 'GitHub', 'GitLab', 'Jira', 'Mattermost', 'Notion'].map((name) => ({ name }))
+  },
+  {
+    title: 'Extra',
+    description: '소프트웨어 외부의 장치 연동과 물리적 구현 경험에 관련된 역량입니다.',
+    skills: ['Hardware'].map((name) => ({ name }))
   }
 ];
 

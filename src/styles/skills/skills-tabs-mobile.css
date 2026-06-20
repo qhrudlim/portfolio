@@ -1,0 +1,24 @@
+@media (max-width: 720px) {
+  .skills-filter-desktop {
+    display: none;
+  }
+
+  .skills-filter-mobile {
+    display: grid;
+  }
+
+  .skills-filter-row {
+    gap: 0.55rem;
+  }
+
+  .skills-filter-row .filter-btn {
+    padding: 0.55rem 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .selected-skill-category .skill-tags {
+    grid-template-columns: 1fr;
+  }
+}
+

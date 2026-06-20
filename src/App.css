@@ -10,6 +10,8 @@
 @import './styles/pages/projects-responsive.css';
 @import './styles/pages/timeline.css';
 @import './styles/skills/skills.css';
+@import './styles/skills/skills-tabs.css';
+@import './styles/skills/skills-tabs-mobile.css';
 @import './styles/skills/skills-modal.css';
 @import './styles/skills/skills-level.css';
 @import './styles/skills/skills-responsive.css';
